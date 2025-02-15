@@ -16,7 +16,7 @@ Navigators likely need transparency, so `.jpg`/`.jpeg` is *possible* to use, but
 Any `.toml` file in `./Data/Navigator/` will be recognized as a `navigator`.  
 All filepaths defined in `*.toml` are relative filepaths from the file.
 
-```navigator.toml
+```NAVIGATOR.TOML
 ...
 [texture_paths]
 img_icon = "icon.png"
@@ -27,7 +27,7 @@ wav_allmarvelous = "allmarvelous.wav"
 ...
 ```
 
-```file tree
+```FILE TREE
 .
 └── StreamingAssets/
     └── Data/
@@ -61,92 +61,92 @@ wav_allmarvelous = "allmarvelous.wav"
 | blink_interval      | seconds    | Time between blinks.                                                       |
 | blink_duration      | seconds    | Time between frames of the blink animation.                                |
 | \[texture_paths]    | dictionary | `.toml` tag to declare a dictionary/collection.                            |
-| img_icon            | image      | Icon displayed when selecting navigators.                                  |  
-| img_base            | image      | Body only                                                                  |  
-| img_neutral_0       | image      | Face only - Neutral expression - Eyes fully open.                          |  
-| img_neutral_1       | image      | Face only - Neutral expression - Eyes half open.                           |  
-| img_neutral_2       | image      | Face only - Neutral expression - Eyes closed.                              |  
-| img_amazed_0        | image      | Face only - Amazed expression - Eyes fully open.                           |  
-| img_amazed_1        | image      | Face only - Amazed expression - Eyes half open.                            |  
-| img_amazed_2        | image      | Face only - Amazed expression - Eyes closed.                               |  
-| img_troubled_0      | image      | Face only - Troubled expression - Eyes fully open.                         |  
-| img_troubled_1      | image      | Face only - Troubled expression - Eyes half open.                          |  
-| img_troubled_2      | image      | Face only - Troubled expression - Eyes closed.                             |  
-| img_surprised_0     | image      | Face only - Surprised expression - Eyes fully open.                        |  
-| img_surprised_1     | image      | Face only - Surprised expression - Eyes half open.                         |  
-| img_surprised_2     | image      | Face only - Surprised expression - Eyes closed.                            |  
-| img_startled_0      | image      | Face only - Startled expression - Eyes fully open.                         |  
-| img_startled_1      | image      | Face only - Startled expression - Eyes half open.                          |  
-| img_startled_2      | image      | Face only - Startled expression - Eyes closed.                             |  
-| img_angry_0         | image      | Face only - Angry expression - Eyes fully open.                            |  
-| img_angry_1         | image      | Face only - Angry expression - Eyes half open.                             |  
-| img_angry_2         | image      | Face only - Angry expression - Eyes closed.                                |  
-| img_laughing_0      | image      | Face only - Laughing expression - Eyes fully open.                         |  
-| img_laughing_1      | image      | Face only - Laughing expression - Eyes half open.                          |  
-| img_laughing_2      | image      | Face only - Laughing expression - Eyes closed.                             |  
-| img_smiling_0       | image      | Face only - Smiling expression - Eyes fully open.                          |  
-| img_smiling_1       | image      | Face only - Smiling expression - Eyes half open.                           |  
-| img_smiling_2       | image      | Face only - Smiling expression - Eyes closed.                              |  
-| img_grinning_0      | image      | Face only - Grinning expression - Eyes fully open.                         |  
-| img_grinning_1      | image      | Face only - Grinning expression - Eyes half open.                          |  
-| img_grinning_2      | image      | Face only - Grinning expression - Eyes closed.                             |  
+| image_icon          | file path  | Icon displayed when selecting navigators.                                  |  
+| image_base          | file path  | Body only                                                                  |  
+| image_neutral_0     | file path  | Face only - Neutral expression - Eyes fully open.                          |  
+| image_neutral_1     | file path  | Face only - Neutral expression - Eyes half open.                           |  
+| image_neutral_2     | file path  | Face only - Neutral expression - Eyes closed.                              |  
+| image_amazed_0      | file path  | Face only - Amazed expression - Eyes fully open.                           |  
+| image_amazed_1      | file path  | Face only - Amazed expression - Eyes half open.                            |  
+| image_amazed_2      | file path  | Face only - Amazed expression - Eyes closed.                               |  
+| image_troubled_0    | file path  | Face only - Troubled expression - Eyes fully open.                         |  
+| image_troubled_1    | file path  | Face only - Troubled expression - Eyes half open.                          |  
+| image_troubled_2    | file path  | Face only - Troubled expression - Eyes closed.                             |  
+| image_surprised_0   | file path  | Face only - Surprised expression - Eyes fully open.                        |  
+| image_surprised_1   | file path  | Face only - Surprised expression - Eyes half open.                         |  
+| image_surprised_2   | file path  | Face only - Surprised expression - Eyes closed.                            |  
+| image_startled_0    | file path  | Face only - Startled expression - Eyes fully open.                         |  
+| image_startled_1    | file path  | Face only - Startled expression - Eyes half open.                          |  
+| image_startled_2    | file path  | Face only - Startled expression - Eyes closed.                             |  
+| image_angry_0       | file path  | Face only - Angry expression - Eyes fully open.                            |  
+| image_angry_1       | file path  | Face only - Angry expression - Eyes half open.                             |  
+| image_angry_2       | file path  | Face only - Angry expression - Eyes closed.                                |  
+| image_laughing_0    | file path  | Face only - Laughing expression - Eyes fully open.                         |  
+| image_laughing_1    | file path  | Face only - Laughing expression - Eyes half open.                          |  
+| image_laughing_2    | file path  | Face only - Laughing expression - Eyes closed.                             |  
+| image_smiling_0     | file path  | Face only - Smiling expression - Eyes fully open.                          |  
+| image_smiling_1     | file path  | Face only - Smiling expression - Eyes half open.                           |  
+| image_smiling_2     | file path  | Face only - Smiling expression - Eyes closed.                              |  
+| image_grinning_0    | file path  | Face only - Grinning expression - Eyes fully open.                         |  
+| image_grinning_1    | file path  | Face only - Grinning expression - Eyes half open.                          |  
+| image_grinning_2    | file path  | Face only - Grinning expression - Eyes closed.                             |  
 | \[audio_clip_paths] | dictionary | `.toml` tag to declare a dictionary/collection.                            |
-| wav_allmarvelous    | audio      | Voice line saying "ALL MARVELOUS!"                                         |
-| wav_fullcombo       | audio      | Voice line saying "FULL COMBO!"                                            |
-| wav_missless        | audio      | Voice line saying "MISSLESS!"                                              |
-| wav_clear_0         | audio      | Voice line saying "CLEAR." - (neutral)                                     |
-| wav_clear_1         | audio      | Voice line saying "CLEAR!" - (enthusiastic)                                |
-| wav_clear_2         | audio      | Voice line saying "CLEAR~!!!" - (amazed)                                   |
+| audio_allmarvelous  | file path  | Voice line saying "ALL MARVELOUS!"                                         |
+| audio_fullcombo     | file path  | Voice line saying "FULL COMBO!"                                            |
+| audio_missless      | file path  | Voice line saying "MISSLESS!"                                              |
+| audio_clear_0       | file path  | Voice line saying "CLEAR." - (neutral)                                     |
+| audio_clear_1       | file path  | Voice line saying "CLEAR!" - (enthusiastic)                                |
+| audio_clear_2       | file path  | Voice line saying "CLEAR~!!!" - (amazed)                                   |
 
 ## Resolution
 
 For consistency, I recommend this resolution:
 
-| Image            | Resolution |
-|------------------|------------|
-| img_icon         | 512x512    |  
-| img_base         | 1024x1024  |  
-| img_expression_# | 256x256    |
+| Image              | Resolution |
+|--------------------|------------|
+| image_icon         | 512x512    |  
+| image_base         | 1024x1024  |  
+| image_expression_# | 256x256    |
 
 ## Naming Scheme
 
 For consistency, I recommend this naming scheme:
 
-| Property         | File Name        |
-|------------------|------------------|
-| Navigator File   | navigator.toml   |
-| img_icon         | icon.png         |  
-| img_base         | base.png         |  
-| img_neutral_0    | neutral_0.png    |  
-| img_neutral_1    | neutral_1.png    |  
-| img_neutral_2    | neutral_2.png    |  
-| img_amazed_0     | amazed_0.png     |  
-| img_amazed_1     | amazed_1.png     |  
-| img_amazed_2     | amazed_2.png     |  
-| img_troubled_0   | troubled_0.png   |  
-| img_troubled_1   | troubled_1.png   |  
-| img_troubled_2   | troubled_2.png   |  
-| img_surprised_0  | surprised_0.png  |  
-| img_surprised_1  | surprised_1.png  |  
-| img_surprised_2  | surprised_2.png  |  
-| img_startled_0   | startled_0.png   |  
-| img_startled_1   | startled_1.png   |  
-| img_startled_2   | startled_2.png   |  
-| img_angry_0      | angry_0.png      |  
-| img_angry_1      | angry_1.png      |  
-| img_angry_2      | angry_2.png      |  
-| img_laughing_0   | laughing_0.png   |  
-| img_laughing_1   | laughing_1.png   |  
-| img_laughing_2   | laughing_2.png   |  
-| img_smiling_0    | smiling_0.png    |  
-| img_smiling_1    | smiling_1.png    |  
-| img_smiling_2    | smiling_2.png    |  
-| img_grinning_0   | grinning_0.png   |  
-| img_grinning_1   | grinning_1.png   |  
-| img_grinning_2   | grinning_2.png   |
-| wav_allmarvelous | allmarvelous.wav |
-| wav_fullcombo    | fullcombo.wav    |
-| wav_missless     | missless.wav     |
-| wav_clear_0      | clear_0.wav      |
-| wav_clear_1      | clear_1.wav      |
-| wav_clear_2      | clear_2.wav      |
+| Property           | File Name        |
+|--------------------|------------------|
+| Navigator File     | navigator.toml   |
+| image_icon         | icon.png         |  
+| image_base         | base.png         |  
+| image_neutral_0    | neutral_0.png    |  
+| image_neutral_1    | neutral_1.png    |  
+| image_neutral_2    | neutral_2.png    |  
+| image_amazed_0     | amazed_0.png     |  
+| image_amazed_1     | amazed_1.png     |  
+| image_amazed_2     | amazed_2.png     |  
+| image_troubled_0   | troubled_0.png   |  
+| image_troubled_1   | troubled_1.png   |  
+| image_troubled_2   | troubled_2.png   |  
+| image_surprised_0  | surprised_0.png  |  
+| image_surprised_1  | surprised_1.png  |  
+| image_surprised_2  | surprised_2.png  |  
+| image_startled_0   | startled_0.png   |  
+| image_startled_1   | startled_1.png   |  
+| image_startled_2   | startled_2.png   |  
+| image_angry_0      | angry_0.png      |  
+| image_angry_1      | angry_1.png      |  
+| image_angry_2      | angry_2.png      |  
+| image_laughing_0   | laughing_0.png   |  
+| image_laughing_1   | laughing_1.png   |  
+| image_laughing_2   | laughing_2.png   |  
+| image_smiling_0    | smiling_0.png    |  
+| image_smiling_1    | smiling_1.png    |  
+| image_smiling_2    | smiling_2.png    |  
+| image_grinning_0   | grinning_0.png   |  
+| image_grinning_1   | grinning_1.png   |  
+| image_grinning_2   | grinning_2.png   |
+| audio_allmarvelous | allmarvelous.wav |
+| audio_fullcombo    | fullcombo.wav    |
+| audio_missless     | missless.wav     |
+| audio_clear_0      | clear_0.wav      |
+| audio_clear_1      | clear_1.wav      |
+| audio_clear_2      | clear_2.wav      |

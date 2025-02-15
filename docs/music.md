@@ -13,63 +13,94 @@
 - `.webm`
 - `.mp4`
 
-Saturn uses the standard Unity Video Player. All [video formats listed here](https://docs.unity3d.com/Manual/VideoSources-FileCompatibility.html) are compatible.
+SATURN uses the standard Unity Video Player. All [video formats listed here](https://docs.unity3d.com/Manual/VideoSources-FileCompatibility.html) are compatible.
 
-## File Structure
+## Entries
 
-A `song` has **five** available `difficulties`: Normal, Hard, Expert, Inferno, World's End.  
-It can only have **one** of each. If there are duplicate difficulties, only the last one in *ascending alphabetical order* will be loaded.
+Each `.sat` file defines one `entry`.  
+Each `entry` holds metadata (info about the song) and a chart (collection of notes).
 
-Any folder containing **one or more** `.sat` files will be recognized as a `song`.  
-Any folder containing **one or more** `song` folders will be recognized as a `folder`.  
-This folder's name in the file system will also be the name of the `folder`.
+## Songs
 
-A `folder` can have two optional files to change its appearance in-game:  
-- `color.txt` defines a color for the folder. *supported format: #RRGGBB*
-- `icon.png` defines an icon for the folder. *512x or 1024x recommended*
+Any directory containing **one or more** `.sat` files will be recognized as a `song`.  
+A `song` has five slots for `entries`, one of each `difficulty`:
 
-A valid song list with...
-- a `folder` called *\<FOLDER>*
-- ...containing a `song` called *\<SONG>* 
-- ...containing all 5 `difficulties`
+| Name        | Short Name   | ID |
+|-------------|--------------|----|
+| Normal      | `NRM`        | 0  |
+| Hard        | `HRD`        | 1  |
+| Expert      | `EXP`        | 2  |
+| Inferno     | `INF`        | 3  |
+| World's End | `END` / `WE` | 4  |
 
-...looks like this:
+Paths to media (audio, video, images) defined in each `.sat` file are local paths from the file itself.  
+All media should be in the same directory as chart files, or a sub-directory. (not recommended)
 
-```file tree
+If a `song` has two or more `entries` with the same `difficulty`, only the last one in **ascending alphabetical order** will be loaded in SATURN.  
+In this example, all chart files have their `difficulty` set to `normal`. Only `chart_C.sat` will appear in-game, as it's the last in ascending alphabetical order.
+```FILE TREE
+.
+└── <SONG>/
+    ├── chart_A.sat
+    ├── chart_B.sat
+    ├── chart_C.sat
+    └── ...
+```
+
+## Folders
+
+Any directory containing **one or more** `song` directories will be recognized as a `folder`.
+A `folder` can be styled with a `folder.toml` file.
+
+| Property   | Type     | Use Case             |
+|------------|----------|----------------------|
+| name       | string   | Name of the folder.  |
+| color_code | hex code | Color of the folder. |
+| image_path | filepath | Folder icon image.   |
+
+Here's an example file structure. It contains:  
+- one `folder` directory, styled with a `folder.toml` file.
+- two `song` directories, each containing:
+  - three `entries`
+  - an audio file
+  - an image file
+
+```FILE TREE
 .
 └── StreamingAssets/
     └── Music/
         └── <FOLDER>/
-            ├── color.txt
+            ├── folder.toml
             ├── icon.png
-            └── <SONG>/
+            ├── <SONG 1>/
+            │   ├── 0.sat
+            │   ├── 1.sat
+            │   ├── 2.sat
+            │   ├── audio.wav
+            │   └── jacket.png
+            └── <SONG 2>/
                 ├── 0.sat
                 ├── 1.sat
                 ├── 2.sat
-                ├── 3.sat
-                ├── 4.sat
-                ├── <AUDIO>.wav
-                ├── <IMAGE>.png
-                └── <VIDEO>.mp4
+                ├── audio.wav
+                └── jacket.png
 ```
 
-A `song` can technically also be a `folder` for another `song`...
-```file tree
+A `song` directory can technically also be a `folder` directory for another `song`...
+
+```FILE TREE
 .
 └── StreamingAssets/
     └── Music/
         └── <FOLDER>/
-            ├── color.txt
+            ├── folder.toml
             ├── icon.png
             └── <SONG 1>/
-                ├── color.txt
-                ├── icon.png
+                ├── folder.toml
                 ├── 0.sat
-                ├── <AUDIO>.wav
                 ├── ...
                 └── <SONG 2>/
                     ├── 0.sat
-                    ├── <AUDIO>.wav
                     └── ...
 ```
 
@@ -79,13 +110,15 @@ A `song` can technically also be a `folder` for another `song`...
 
 For consistency, I recommend this naming scheme:
 
-| Property          | File Name    |
-|-------------------|--------------|
-| Normal Chart      | `0.sat`      |
-| Hard Chart        | `1.sat`      |
-| Expert Chart      | `2.sat`      |
-| Inferno Chart     | `3.sat`      |
-| World's End Chart | `4.sat`      |
-| Audio File        | `audio.wav`  |
-| Jacket File       | `jacket.png` |
-| Video File        | `mv.mp4`     |
+| Property          | File Name     |
+|-------------------|---------------|
+| Folder Files      | `folder.toml` |
+| Folder Icons      | `icon.png`    |
+| Normal Chart      | `0.sat`       |
+| Hard Chart        | `1.sat`       |
+| Expert Chart      | `2.sat`       |
+| Inferno Chart     | `3.sat`       |
+| World's End Chart | `4.sat`       |
+| Audio File        | `audio.wav`   |
+| Jacket File       | `jacket.png`  |
+| Video File        | `mv.mp4`      |

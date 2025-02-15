@@ -11,7 +11,7 @@ Emblems need transparency to be the right shape, so `.jpg`/`.jpeg` is *possible*
 Any `.toml` file in `./Data/Emblem/` will be recognized as an `emblem`.  
 All filepaths defined in `*.toml` are relative filepaths from the file.
 
-```emblem.toml
+```EMBLEM.TOML
 guid = "00000000-0000-0000-0000-000000000000"
 name = "Sample Emblem"
 description = "A sample emblem."
@@ -19,7 +19,7 @@ artist = "artist"
 emblem_path = "emblem.png"
 ```
 
-```file tree
+```FILE TREE
 .
 └── StreamingAssets/
     └── Data/
@@ -31,13 +31,13 @@ emblem_path = "emblem.png"
 
 ## Properties
 
-| Property    | Type   | Use Case                                                                   |
-|-------------|--------|----------------------------------------------------------------------------|
-| guid        | string | A **G**lobally **U**nique **Id**entifier (GUID) to identify each cosmetic. |
-| name        | string | Name of the emblem.                                                        |
-| description | string | Description of the emblem.                                                 |
-| artist      | string | Artist that made the emblem.                                               |
-| emblem_path | image  | Emblem image.                                                              |
+| Property    | Type     | Use Case                                                                   |
+|-------------|----------|----------------------------------------------------------------------------|
+| guid        | string   | A **G**lobally **U**nique **Id**entifier (GUID) to identify each cosmetic. |
+| name        | string   | Name of the emblem.                                                        |
+| description | string   | Description of the emblem.                                                 |
+| artist      | string   | Artist that made the emblem.                                               |
+| image_path  | filepath | Emblem image.                                                              |
 
 ## Resolution
 
@@ -54,5 +54,5 @@ For consistency, I recommend this naming scheme:
 | Property    | File Name   |
 |-------------|-------------|
 | Emblem File | emblem.toml |
-| emblem_path | emblem.png  |
+| image_path  | emblem.png  |
 

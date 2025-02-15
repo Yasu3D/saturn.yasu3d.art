@@ -5,7 +5,7 @@
 Any `.toml` file in `./Data/ConsoleColor/` will be recognized as a `console color`.  
 Putting console colors in sub-folders isn't as necessary as with other cosmetics, since they're contained to one file.
 
-```console_color.toml
+```CONSOLE_COLOR.TOML
 guid = "00000000-0000-0000-0000-000000000000"
 name = "Sample Console Color"
 color_a = "#123ABC"
@@ -16,7 +16,7 @@ led_b = "#123ABC"
 led_c = "#123ABC"
 ```
 
-```file tree
+```FILE TREE
 .
 └── StreamingAssets/
     └── Data/
