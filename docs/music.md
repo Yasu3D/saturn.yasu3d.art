@@ -34,11 +34,13 @@ A `song` has five slots for `entries`, one of each `difficulty`:
 | World's End | `END` / `WE` | 4  |
 
 Paths to media (audio, video, images) defined in each `.sat` file are local paths from the file itself.  
-All media should be in the same directory as chart files, or a sub-directory. (not recommended)
+All media should be in the same directory as chart files, or a subdirectory. (not recommended)
 
-If a `song` has two or more `entries` with the same `difficulty`, only the last one in **ascending alphabetical order** will be loaded in SATURN.  
+If a `song` has two or more `entries` with the same `difficulty`, only the last one in **ascending alphabetical order** will be loaded in SATURN.
+
 In this example, all chart files have their `difficulty` set to `normal`. Only `chart_C.sat` will appear in-game, as it's the last in ascending alphabetical order.
-```FILE TREE
+
+```file tree
 .
 └── <SONG>/
     ├── chart_A.sat
@@ -49,14 +51,25 @@ In this example, all chart files have their `difficulty` set to `normal`. Only `
 
 ## Folders
 
-Any directory containing **one or more** `song` directories will be recognized as a `folder`.
-A `folder` can be styled with a `folder.toml` file.
+Any directory containing **one or more** `song` directories will be recognized as a `folder`.  
+If a `folder.toml` file is present, it specifies the `folder`'s name, color, and icon.  
+If not, the directory name, a neutral gray color, and a placeholder icon are used instead.
 
-| Property   | Type     | Use Case             |
-|------------|----------|----------------------|
-| name       | string   | Name of the folder.  |
-| color_code | hex code | Color of the folder. |
-| image_path | filepath | Folder icon image.   |
+```toml
+name = "Sample Folder"
+color_code = "#AABBCC"
+image_path = "icon.png"
+```
+
+### Properties
+
+| Property     | Type     | Use Case             |
+|--------------|----------|----------------------|
+| `name`       | String   | Name of the folder.  |
+| `color_code` | Hex Code | Color of the folder. |
+| `image_path` | Filepath | Folder icon image.   |
+
+## File Structure
 
 Here's an example file structure. It contains:  
 - one `folder` directory, styled with a `folder.toml` file.
@@ -65,7 +78,7 @@ Here's an example file structure. It contains:
   - an audio file
   - an image file
 
-```FILE TREE
+```file tree
 .
 └── StreamingAssets/
     └── Music/
@@ -88,7 +101,7 @@ Here's an example file structure. It contains:
 
 A `song` directory can technically also be a `folder` directory for another `song`...
 
-```FILE TREE
+```file tree
 .
 └── StreamingAssets/
     └── Music/

@@ -5,7 +5,7 @@
 Any `.toml` file in `./Data/ConsoleColor/` will be recognized as a `console color`.  
 Putting console colors in sub-folders isn't as necessary as with other cosmetics, since they're contained to one file.
 
-```CONSOLE_COLOR.TOML
+```toml
 guid = "00000000-0000-0000-0000-000000000000"
 name = "Sample Console Color"
 color_a = "#123ABC"
@@ -16,7 +16,7 @@ led_b = "#123ABC"
 led_c = "#123ABC"
 ```
 
-```FILE TREE
+```file tree
 .
 └── StreamingAssets/
     └── Data/
@@ -26,13 +26,13 @@ led_c = "#123ABC"
 
 ## Properties
 
-| Property | Type   | Use Case                                                                   |
-|----------|--------|----------------------------------------------------------------------------|
-| guid     | string | A **G**lobally **U**nique **Id**entifier (GUID) to identify each cosmetic. |
-| name     | string | Name of the console color.                                                 |
-| color_a  | color  | Color to display on screen. For areas with no mask.                        |
-| color_b  | color  | Color to display on screen. For areas with mask.                           |
-| color_c  | color  | Color to display on screen. For areas with notes.                          |
-| led_a    | color  | Color to send to LEDs. For areas with no mask.                             |
-| led_b    | color  | Color to send to LEDs. For areas with mask.                                |
-| led_c    | color  | Color to send to LEDs. For areas with notes.                               |
+| Property  | Type   | Use Case                                                                   |
+|-----------|--------|----------------------------------------------------------------------------|
+| `guid`    | String | A **G**lobally **U**nique **Id**entifier (GUID) to identify each cosmetic. |
+| `name`    | String | Name of the console color.                                                 |
+| `color_a` | Color  | Color to display on screen. For areas with no mask.                        |
+| `color_b` | Color  | Color to display on screen. For areas with mask.                           |
+| `color_c` | Color  | Color to display on screen. For areas with notes.                          |
+| `led_a`   | Color  | Color to send to LEDs. For areas with no mask.                             |
+| `led_b`   | Color  | Color to send to LEDs. For areas with mask.                                |
+| `led_c`   | Color  | Color to send to LEDs. For areas with notes.                               |
