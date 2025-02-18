@@ -141,11 +141,6 @@ SATURN has a fixed set of metadata tags with different kinds of value types:
 			<td>String</td>
 			<td colspan="2">BPM to display during song select. Does not affect chart BPM.</td>
 		</tr>
-        <tr>
-			<td><code>@BAR_LINE</code></td>
-			<td>Bool (0/1)</td>
-			<td colspan="2">Auto-generate bar lines.</td>
-		</tr>
 		<tr>
 			<td rowspan="10" style="vertical-align: top"><code>@BACKGROUND</code></td>
 			<td rowspan="10" style="vertical-align: top">Index</td>
@@ -484,18 +479,6 @@ Reverses define no other values.
 1    0    0    REV_START
 2    0    1    REV_END
 3    0    2    REV_ZONE_END
-```
-
-#### Bar Line
-
-Defined by: `BAR_LINE`.  
-Creates an extra bar line that isn't fixed to the beginning of a measure.
-
-Bar lines define no other values.
-
-```sat
-@GIMMICKS
-1    0    0    BAR_LINE
 ```
 
 #### Chart End
@@ -984,6 +967,15 @@ If it was written manually, this comment is not necessary.
 # Created with SampleEditor v1.0.0
 ```
 
+GUIDs may also have an editor identifier by adding a two-letter code at the start.
+
+```sat
+# Normal GUID
+@GUID           00000000-0000-0000-0000-000000000000
+
+# GUID with editor identifier "XX".
+@GUID           XX00000000-0000-0000-0000-000000000000
+```
 
 ### Metadata Tag Guidelines
 
@@ -1025,7 +1017,6 @@ A complete metadata section for a SAT file should look like this:
 @AUTHOR•••••••••Note Designer
 @BPM_TEXT•••••••120
 
-@BAR_LINE•••••••0
 @BACKGROUND•••••0
 
 @DIFF•••••••••••2
