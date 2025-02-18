@@ -486,6 +486,18 @@ Reverses define no other values.
 3    0    2    REV_ZONE_END
 ```
 
+#### Bar Line
+
+Defined by: `BAR_LINE`.  
+Creates an extra bar line that isn't fixed to the beginning of a measure.
+
+Bar lines define no other values.
+
+```sat
+@GIMMICKS
+1    0    0    BAR_LINE
+```
+
 #### Chart End
 
 Defined by: `CHART_END`.  
@@ -493,7 +505,7 @@ Marks the end of the chart and stops playback.
 There **can** be more than one `CHART_END` in a chart, but this is not recommended as it may lead to undefined behaviour.  
 Current parsers scan line-by-line, so the last defined `CHART_END` will overwrite previous ones.
 
-Chart Ends define no other values.
+Chart ends define no other values.
 
 ```sat
 @GIMMICKS
@@ -973,7 +985,7 @@ If it was written manually, this comment is not necessary.
 ```
 
 
-### Metadata Tags
+### Metadata Tag Guidelines
 
 Metadata tags should be left-aligned and padded with whitespace to take up 16 characters.
 
@@ -1030,7 +1042,7 @@ A complete metadata section for a SAT file should look like this:
 @BGA_OFFSET•••••0.000000
 ```
 
-### Comments
+### Comment Guidelines
 
 The measure, tick, and index of a comment should each be left-aligned and padded with whitespace to take up 4 characters.  
 Between each should be a single space as a separator.
@@ -1043,7 +1055,7 @@ Otherwise if a value reaches 5 digits it would fill up all 5 characters and merg
 1••• 0••• 0••• Hello World!
 ```
 
-### Gimmicks
+### Gimmick Guidelines
 
 The measure, tick, and index of a gimmick should each be left-aligned and padded with whitespace to take up 4 characters.  
 Between each should be a single space as a separator.
@@ -1090,7 +1102,7 @@ The goal is to make the first number line up with the integer part of decimal nu
 0••• 0••• 0••• BPM••••••••••••• •120.000000
 ```
 
-### Objects
+### Object Guidelines
 
 The measure, tick, index, position, and size of an object should each be left-aligned and padded with whitespace to take up 4 characters. Between each should be a single space as a separator.  
 
