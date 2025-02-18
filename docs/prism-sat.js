@@ -4,14 +4,24 @@ Prism.languages.sat = {
     },
     
     'tag': {
-        pattern: /^@[A-Z0-9_]+/m,
+        pattern: /^@[A-Z\d_]+[\s•]+/m,
+        inside: {
+            'key': {
+                pattern: /^@[A-Z\d_]+/,
+                greedy: true,
+            },
+            'space': {
+                pattern: /(?<=^@[A-Z\d_]+)[\s•]+/,
+                greedy: true,
+            },
+        },
     },
     
     'gimmick': {
         pattern: /^[\s•]*\d+[\s•]+\d+[\s•]+\d+[\s•]+[A-Z_]+(\.[A-Z_\d]+)?([\s•]+[+\-\d.]*)?([\s•]+\d+)?$/m,
         inside: {
             'space0': {
-                pattern: /^[\s•]*/,
+                pattern: /^[\s•]+/,
                 greedy: true,
                 alias: 'space',
             },
@@ -77,7 +87,7 @@ Prism.languages.sat = {
         pattern: /^[\s•]*\d+[\s•]+\d+[\s•]+\d+[\s•]+\d+[\s•]+\d+[\s•]+[A-Z_]+(?:.[A-Z_\d]+)?/,
         inside: {
             'space0': {
-                pattern: /^[\s•]*/,
+                pattern: /^[\s•]+/,
                 greedy: true,
                 alias: 'space',
             },
@@ -138,19 +148,39 @@ Prism.languages.sat = {
     },
     
     'annotation': {
-        pattern: /^[\s•]*\d+[\s•]+\d+[\s•]+\d+[\s•]+.*/,
+        pattern: /^[\s•]*\d+[\s•]+\d+[\s•]+\d+[\s•]+.*/m,
         inside: {
+            'space0': {
+                pattern: /^[\s•]+/,
+                greedy: true,
+                alias: 'space',
+            },
             'measure': {
                 pattern: /(?<=^[\s•]*)\d+/,
                 greedy: true,
+            },
+            'space1': {
+                pattern: /(?<=^[\s•]*\d+)[\s•]+/,
+                greedy: true,
+                alias: 'space',
             },
             'tick': {
                 pattern: /(?<=^[\s•]*\d+[\s•]+)\d+/,
                 greedy: true,
             },
+            'space2': {
+                pattern: /(?<=^[\s•]*\d+[\s•]+\d+)[\s•]+/,
+                greedy: true,
+                alias: 'space',
+            },
             'index': {
                 pattern: /(?<=^[\s•]*\d+[\s•]+\d+[\s•]+)\d+/,
                 greedy: true,
+            },
+            'space3': {
+                pattern: /(?<=^[\s•]*\d+[\s•]+\d+[\s•]+\d+)[\s•]+/,
+                greedy: true,
+                alias: 'space',
             },
             'message': {
                 pattern: /(?<=^[\s•]*\d+[\s•]+\d+[\s•]+\d+[\s•]+).*/,

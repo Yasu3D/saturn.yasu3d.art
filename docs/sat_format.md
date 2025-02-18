@@ -1,4 +1,4 @@
-# SAT Format (ver.2)
+# SAT Format (ver.3)
 
 SATURN ~~An~~notation Table
 
@@ -17,7 +17,9 @@ It aims to be an expandable and more human-readable format than MER or many othe
 - Only one object can be defined per line.
 - Valid whitespace characters are: Space ` ` `(0x20)`
 - Valid newline characters are: LF `\n` `(0x0A)` or CRLF `\r\n` `(0x0D 0x0A)`
-- The amount of whitespace and newlines between blocks of data are arbitrary, but adhering to [design guidelines](#design-guidelines) is recommended for consistency.
+- Valid decimal separators are: Period `.` `(0x2e)`
+- Parsers and writers **must** use `InvariantCulture` for string conversions.
+- The amount of whitespace and newlines between blocks of data are arbitrary, but adhering to [design guidelines](#design-guidelines) is recommended for consistency.  
 
 ## Parser Comments
 
@@ -139,6 +141,11 @@ SATURN has a fixed set of metadata tags with different kinds of value types:
 			<td>String</td>
 			<td colspan="2">BPM to display during song select. Does not affect chart BPM.</td>
 		</tr>
+        <tr>
+			<td><code>@BAR_LINE</code></td>
+			<td>Bool (0/1)</td>
+			<td colspan="2">Auto-generate bar lines.</td>
+		</tr>
 		<tr>
 			<td rowspan="10" style="vertical-align: top"><code>@BACKGROUND</code></td>
 			<td rowspan="10" style="vertical-align: top">Index</td>
@@ -229,15 +236,15 @@ SATURN has a fixed set of metadata tags with different kinds of value types:
 			<td>Seconds</td>
 			<td colspan="2">Duration of the song and chart preview.</td>
 		</tr>
+        <tr>
+			<td><code>@JACKET</code></td>
+			<td>Filepath</td>
+			<td colspan="2">Local path to jacket file.</td>
+		</tr>
 		<tr>
 			<td><code>@BGM</code></td>
 			<td>Filepath</td>
 			<td colspan="2">Local path to audio file.</td>
-		</tr>
-		<tr>
-			<td><code>@BGM_OFFSET</code></td>
-			<td>Seconds</td>
-			<td colspan="2">Audio offset in seconds.<br/>Positive offset makes the audio earlier than the chart.<br/>Negative offset makes the audio later than the chart.</td>
 		</tr>
 		<tr>
 			<td><code>@BGA</code></td>
@@ -245,14 +252,14 @@ SATURN has a fixed set of metadata tags with different kinds of value types:
 			<td colspan="2">Local path to video file.</td>
 		</tr>
 		<tr>
+			<td><code>@BGM_OFFSET</code></td>
+			<td>Seconds</td>
+			<td colspan="2">Audio offset in seconds.<br/>Positive offset makes the audio earlier than the chart.<br/>Negative offset makes the audio later than the chart.</td>
+		</tr>
+		<tr>
 			<td><code>@BGA_OFFSET</code></td>
 			<td>Seconds</td>
 			<td colspan="2">Video offset in seconds.<br/>Positive offset makes the video earlier than the chart.<br/>Negative offset makes the video later than the chart.</td>
-		</tr>
-        <tr>
-			<td><code>@JACKET</code></td>
-			<td>Filepath</td>
-			<td colspan="2">Local path to jacket file.</td>
 		</tr>
 	</tbody>
 </table>
@@ -829,7 +836,7 @@ All objects are implicitly assigned to Layer `.L0` by default. This attribute ca
 4    0    4    45   15   TOUCH.L0
 ```
 
-If `HOLD_START` is assigned to a scroll layer, all `HOLD_POINT` and `HOLD_END` objects part of the hold will automatically be assigned to the same one.
+If `HOLD_START` is assigned to a scroll layer, all `HOLD_POINT` and `HOLD_END` objects that are part of the hold will automatically be assigned to the same one.
 
 ```sat
 @OBJECTS
@@ -840,7 +847,7 @@ If `HOLD_START` is assigned to a scroll layer, all `HOLD_POINT` and `HOLD_END` o
 # Implicitly assigned to Layer .L1 during parsing.
 ```
 
-This happens even if `HOLD_POINT` and `HOLD_END` objects are explicitly assigned to a different layer.
+This happens even if `HOLD_POINT` and `HOLD_END` objects are explicitly assigned to different layers than `HOLD_START`.
 
 ```sat
 @OBJECTS
@@ -856,40 +863,243 @@ Only assigning `HOLD_START` reduces clutter.
 
 #### Bonus
 
+Defined by: `.BONUS`.  
+Applicable to: `TOUCH`, `CHAIN`, `HOLD_START`, `SLIDE_CW`, `SLIDE_CCW`, `SNAP_FW`, `SNAP_BW`.
+
+Gives the object the bonus effect.  
+Bonus notes fill up the clear meter quicker, and play a sparkly chime when hit.
+
+```sat
+@OBJECTS
+1    0    0    45   15   TOUCH.BONUS
+```
+
 #### R-Note
+
+Defined by: `.RNOTE`.  
+Applicable to: `TOUCH`, `CHAIN`, `HOLD_START`, `SLIDE_CW`, `SLIDE_CCW`, `SNAP_FW`, `SNAP_BW`.
+
+Gives the object the R-Note effect.  
+R-Notes are worth double points, and play a rainbow splash animation / loud splash sound when hit.
+
+```sat
+@OBJECTS
+1    0    0    45   15   TOUCH.RNOTE
+```
 
 #### No Render
 
+Defined by: `.NR`.  
+Applicable to: `HOLD_POINT`, `TRACE_POINT`.
+
+Makes the hold/trace renderer ignore the note.  
+Should be used for all point notes filling in the space between "control points" that define the shape of a hold/trace.
+
+```sat
+@OBJECTS
+1    0    0    45   15   HOLD_START
+1    480  1    46   15   HOLD_POINT.NR
+1    960  2    47   15   HOLD_POINT
+1    1440 3    48   15   HOLD_POINT.NR
+2    0    4    49   15   HOLD_END
+```
+
 #### Mask Direction
+
+Defined by: `.CW`, `.CCW`, `.CENTER`.  
+Applicable to: `MASK_ADD`, `MASK_SUB`.
+
+Defines the direction the sweep animation of a mask object should travel.
+
+```sat
+@OBJECTS
+1    0    0    45   15   MASK_ADD.CW
+1    480  1    45   15   MASK_SUB.CCW
+1    960  2    45   15   MASK_ADD.CENTER
+```
 
 #### Trace Color
 
+Defined by: `.WHITE`, `.BLACK`, `.RED`, `.ORANGE`, `.YELLOW`, `.LIME`, `.GREEN`, `.SKY`, `.BLUE`, `.VIOLET`, `.PINK`.  
+Applicable to: `TRACE_START`, `TRACE_POINT`, `TRACE_END`.  
+
+Defines the color of a trace.
+
+If `TRACE_START` is assigned one color, all `TRACE_POINT` and `TRACE_END` objects that are part of the trace will automatically be assigned the same one.
+
+```sat
+@OBJECTS
+1    0    0    45   2    TRACE_START.RED
+1    480  1    46   2    TRACE_POINT
+1    1440 2    47   2    TRACE_POINT
+2    0    3    48   2    TRACE_END
+# Implicitly assigned color .RED during parsing.
+```
+
+This happens even if `TRACE_POINT` and `TRACE_END` objects are explicitly assigned different colors than `HOLD_START`.
+
+```sat
+@OBJECTS
+1    0    0    45   2    TRACE_START.RED
+1    480  1    46   2    TRACE_POINT.GREEN
+1    1440 2    47   2    TRACE_POINT.BLUE
+2    0    3    48   2    TRACE_END.WHITE
+# All objects implicitly assigned color .RED during parsing.
+```
+
+It's not necessary to explicitly assign colors to all `TRACE_POINT` and `TRACE_END` objects.  
+Only assigning a color to `TRACE_START` reduces clutter.
+
+```sat
+@OBJECTS
+1    0    0    45   2    TRACE_START.VIOLET
+1    480  1    46   2    TRACE_POINT
+1    960  2    47   2    TRACE_POINT
+1    1440 3    48   2    TRACE_POINT
+2    0    4    49   2    TRACE_END
+```
+
 ## Design Guidelines
+
+SAT has a few design guidelines that a writer should adhere to. This is mostly for consistency and ease of reading, but also just because it looks good :^)
+
+### Editor Identifier
+
+A SAT file should begin with a parser comment denoting what editor (and what version of that editor) it was exported from.  
+If it was written manually, this comment is not necessary.
 
 ```sat
 # Created with SampleEditor v1.0.0
-@SAT_VERSION    2
+```
 
-@VERSION        
-@GUID           XX00000000-0000-0000-0000-000000000000
-@TITLE          Title
-@RUBI           TITLE
-@ARTIST         Artist
-@AUTHOR         Note Designer
-@BPM_TEXT       120
 
-@BACKGROUND     0
+### Metadata Tags
 
-@DIFF           2
-@LEVEL          10.000000
-@CLEAR          0.830000
+Metadata tags should be left-aligned and padded with whitespace to take up 16 characters.
 
-@PREVIEW_START  0.00
-@PREVIEW_TIME   10.00
+```sat
+# Correct:
+##--##--##--##--
+@TITLE••••••••••Title
+@ARTIST•••••••••Artist
+@BPM_TEXT•••••••120
 
-@BGM            audio.wav
-@BGM_OFFSET     0.000000
-@BGA            video.mp4
-@BGA_OFFSET     0.000000
-@JACKET         jacket.png
+# Incorrect:
+##--##--##--##--
+@TITLE••••••••Title
+@ARTIST••••••••••Artist
+@BPM_TEXT••••••120
+```
+
+Metadata tags should be listed in the same order as the table found in the [metadata tags](#metadata-tags) section.  
+They should also be grouped together by "theme", and groups should be separated by an empty line.
+- Format Version
+- Chart Info
+- Appearance
+- Level & Difficulty
+- Preview
+- Media & Offsets
+
+A complete metadata section for a SAT file should look like this:
+```sat
+# Created with SampleEditor v1.0.0
+@SAT_VERSION••••2
+
+@VERSION••••••••0
+@GUID•••••••••••XX00000000-0000-0000-0000-000000000000
+@TITLE••••••••••Title
+@RUBI•••••••••••TITLE
+@ARTIST•••••••••Artist
+@AUTHOR•••••••••Note Designer
+@BPM_TEXT•••••••120
+
+@BAR_LINE•••••••0
+@BACKGROUND•••••0
+
+@DIFF•••••••••••2
+@LEVEL••••••••••10.000000
+@CLEAR••••••••••0.830000
+
+@PREVIEW_START••0.00
+@PREVIEW_TIME•••10.00
+
+@JACKET•••••••••jacket.png
+@BGM••••••••••••audio.wav
+@BGA••••••••••••video.mp4
+@BGM_OFFSET•••••0.000000
+@BGA_OFFSET•••••0.000000
+```
+
+### Comments
+
+The measure, tick, and index of a comment should each be left-aligned and padded with whitespace to take up 4 characters.  
+Between each should be a single space as a separator.
+
+This **must** be implemented as `pad(4) + ' '`, **not** `pad(5)`.  
+Otherwise if a value reaches 5 digits it would fill up all 5 characters and merge with a neighboring value.
+
+```sat
+@COMMENTS
+1••• 0••• 0••• Hello World!
+```
+
+### Gimmicks
+
+The measure, tick, and index of a gimmick should each be left-aligned and padded with whitespace to take up 4 characters.  
+Between each should be a single space as a separator.
+
+This **must** be implemented as `pad(4) + ' '`, **not** `pad(5)`.  
+Otherwise if a value reaches 5 digits it would fill up all 5 characters and merge with a neighboring value.
+
+```sat
+@GIMMICKS
+10•• 0••• 0••• CHART_END
+```
+
+For gimmicks with extra values, the type should be left-aligned and padded with whitespace to take up 16 characters.  
+If a value follows after the type, there should be a single space between them as a separator.
+
+```sat
+@GIMMICKS
+#              ##--##--##--##--
+0••• 0••• 0••• BPM••••••••••••• •120.000000
+```
+
+Single decimal values should expose 6 decimal places.  
+They should be right-aligned, and padded with whitespace to take up 11 characters in total:
+- 4 for integer digits
+- 1 for the decimal separator
+- 6 for decimal digits
+
+```sat
+@GIMMICKS
+#                               ##--##--##-
+0••• 0••• 0••• BPM••••••••••••• •120.000000
+1••• 0••• 0••• HISPEED••••••••• •••0.500000
+```
+
+Double integer values should be right-aligned, and padded with whitespace to take up 4 characters each.  
+There should be three spaces between them as a separator.
+
+The goal is to make the first number line up with the integer part of decimal numbers, and to make the second number line up with the end of decimal numbers.
+
+```sat
+@GIMMICKS
+#                               ##--##--##-
+0••• 0••• 0••• TIMESIG••••••••• •••4   •••4
+0••• 0••• 0••• BPM••••••••••••• •120.000000
+```
+
+### Objects
+
+The measure, tick, index, position, and size of an object should each be left-aligned and padded with whitespace to take up 4 characters. Between each should be a single space as a separator.  
+
+This **must** be implemented as `pad(4) + ' '`, **not** `pad(5)`.  
+Otherwise if a value reaches 5 digits it would fill up all 5 characters and merge with a neighboring value.
+
+A single space should come before the type to separate it from the object's size.
+
+```sat
+@OBJECTS
+1••• 0••• 0••• 45•• 15•• TOUCH
 ```
