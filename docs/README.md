@@ -7,7 +7,7 @@ No public downloads are currently available.
 
 ## Recommended System Requirements
 @1080p60hz
-- OS: Windows 10, Windows 11, Linux
+- OS: Windows 11, Windows 10 21H1 or newer, Linux
 - CPU: **Intel Core i5-6500** or better.
 - GPU: **NVIDIA GeForce GTX 1050Ti** or better.
 - RAM: **4GB** or more.

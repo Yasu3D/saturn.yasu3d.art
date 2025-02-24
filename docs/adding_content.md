@@ -14,13 +14,14 @@ You can read about what the `TOML` format is and how it works [here](https://tom
             │   ├── ConsoleColor
             │   ├── Emblem
             │   ├── Icon
+            │   ├── Music
             │   ├── Navigator
             │   ├── NoteSound
             │   ├── Plate
+            │   ├── StageUp
             │   ├── SystemSound
             │   └── Title
+            ├── Font
             ├── Led
-            ├── Locales
-            ├── StageUp
-            └── Music
+            └── Locales
 ```
