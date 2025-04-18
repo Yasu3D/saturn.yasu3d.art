@@ -12,9 +12,14 @@
   - [Emblem](emblem.md)
   - [Note Sound](note_sound.md)
   - [System Sound](system_sound.md)
+  - [System Music](system_music.md)
   - [Console Color](console_color.md)
   - [Locales](locales.md)
   - [Led](led.md)
+
+- Operation Info
+  - [Error Messages](error_messages.md)
+  - [USB Data Import](usb_data_import.md)
 
 - Format Specifications
   - [.SAT](sat_format.md)
