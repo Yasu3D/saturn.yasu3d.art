@@ -230,34 +230,3 @@ audio_textbox_appear = "textbox_appear.wav"
         </tr>
     </tbody>
 </table>
-
-## Naming Scheme
-
-For consistency, I recommend this naming scheme:
-
-| Property                          | File Name                     |
-|-----------------------------------|-------------------------------|
-| `audio_login`                     | login.wav                     |
-| `audio_cycle_mode`                | cycle_mode.wav                |
-| `audio_cycle_folder`              | cycle_folder.wav              |
-| `audio_cycle_song`                | cycle_song.wav                |
-| `audio_cycle_option`              | cycle_option.wav              |
-| `audio_select_ok`                 | select_ok.wav                 |
-| `audio_select_back`               | select_back.wav               |
-| `audio_select_denied`             | select_denied.wav             |
-| `audio_select_decide`             | select_decide.wav             |
-| `audio_select_preview_song`       | select_preview_song.wav       |
-| `audio_select_start_song`         | select_start_song.wav         |
-| `audio_select_start_song_alt`     | select_start_song_alt.wav     |
-| `audio_favorite_add`              | favorite_add.wav              |
-| `audio_favorite_remove`           | favorite_remove.wav           |
-| `audio_result_score_count`        | result_score_count.wav        |
-| `audio_result_score_finished`     | result_score_finished.wav     |
-| `audio_result_rate_bad`           | result_rate_bad.wav           |
-| `audio_result_rate_good`          | result_rate_good.wav          |
-| `audio_rhythm_game_ready`         | rhythm_game_ready.wav         |
-| `audio_rhythm_game_fail`          | rhythm_game_fail.wav          |
-| `audio_rhythm_game_clear`         | rhythm_game_clear.wav         |
-| `audio_rhythm_game_special_clear` | rhythm_game_special_clear.wav |
-| `audio_timer_warning`             | timer_warning.wav             |
-| `audio_textbox_appear`            | textbox_appear.wav            |

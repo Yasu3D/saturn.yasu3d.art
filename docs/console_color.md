@@ -3,7 +3,7 @@
 ## File Structure
 
 Any `.toml` file in `./Data/ConsoleColor/` will be recognized as a `console color`.  
-Putting console colors in sub-folders isn't as necessary as with other cosmetics, since they're contained to one file.
+Putting console colors in sub-directories isn't as necessary as with other cosmetics, since they're contained to one file.
 
 ```toml
 guid = "00000000-0000-0000-0000-000000000000"
