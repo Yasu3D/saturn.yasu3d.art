@@ -19,11 +19,13 @@ All filepaths defined in `*.toml` are relative filepaths from the file.
 ```toml
 # ...
 [texture_paths]
-img_icon = "icon.png"
-img_base = "base.png"
+image_icon = "image/icon.png"
+image_base = "image/base.png"
 # ...
-[audio_clip_paths]
-wav_allmarvelous = "allmarvelous.wav"
+[dialgues.en-US]
+    [[dialogues.en-US.rhythmgame_result_clear_0]]
+        message = "Clear"
+        audio_path = "audio/rhythmgame_result_clear_0.wav"
 # ...
 ```
 
@@ -33,70 +35,166 @@ wav_allmarvelous = "allmarvelous.wav"
     └── Data/
         └── Navigator/
             └── <NAVIGATOR>/
-                ├── navigator.toml
-                ├── icon.png
-                ├── base.png
-                ├── ...
-                ├── allmarvelous.wav
-                └── ...
+                └── navigator.toml/
+                    ├── audio/
+                    │   ├── rhythmgame_result_clear_0.wav
+                    │   └── ...
+                    ├── image/
+                    │   ├── base.png
+                    │   ├── icon.png
+                    │   └── ...
+                    └── navigator.toml
 ```
 
 ## Properties
 
-| Property              | Value Type | Use Case                                                                   |
-|-----------------------|------------|----------------------------------------------------------------------------|
-| `guid`                | String     | A **G**lobally **U**nique **Id**entifier (GUID) to identify each cosmetic. |
-| `name`                | String     | Name of the navigator.                                                     |
-| `description`         | String     | Description of the navigator.                                              |
-| `artist`              | String     | Artist that made the navigator.                                            |
-| `voice`               | String     | Voice actor that recorded the audio.                                       |
-| `width`               | Pixels     | Width of the navigator image to show in-game.                              |
-| `height`              | Pixels     | Height of the navigator image to show in-game.                             |
-| `offset_x`            | Pixels     | Horizontal offset of the navigator image.                                  |
-| `offset_y`            | Pixels     | Vertical offset of the navigator image.                                    |
-| `margin_top`          | Pixels     | Top margin from base image for face image.                                 |
-| `margin_bottom`       | Pixels     | Bottom margin from base image for face image.                              |
-| `margin_left`         | Pixels     | Left margin from base image for face image.                                |
-| `margin_right`        | Pixels     | Right margin from base image for face image.                               |
-| `blink_interval`      | Seconds    | Time between blinks.                                                       |
-| `blink_duration`      | Seconds    | Time between frames of the blink animation.                                |
-| `\[texture_paths]`    | Dictionary | `.toml` tag to declare a dictionary/collection.                            |
-| `image_icon`          | Filepath   | Icon displayed when selecting navigators.                                  |  
-| `image_base`          | Filepath   | Body only                                                                  |  
-| `image_neutral_0`     | Filepath   | Face only - Neutral expression - Eyes fully open.                          |  
-| `image_neutral_1`     | Filepath   | Face only - Neutral expression - Eyes half open.                           |  
-| `image_neutral_2`     | Filepath   | Face only - Neutral expression - Eyes closed.                              |  
-| `image_amazed_0`      | Filepath   | Face only - Amazed expression - Eyes fully open.                           |  
-| `image_amazed_1`      | Filepath   | Face only - Amazed expression - Eyes half open.                            |  
-| `image_amazed_2`      | Filepath   | Face only - Amazed expression - Eyes closed.                               |  
-| `image_troubled_0`    | Filepath   | Face only - Troubled expression - Eyes fully open.                         |  
-| `image_troubled_1`    | Filepath   | Face only - Troubled expression - Eyes half open.                          |  
-| `image_troubled_2`    | Filepath   | Face only - Troubled expression - Eyes closed.                             |  
-| `image_surprised_0`   | Filepath   | Face only - Surprised expression - Eyes fully open.                        |  
-| `image_surprised_1`   | Filepath   | Face only - Surprised expression - Eyes half open.                         |  
-| `image_surprised_2`   | Filepath   | Face only - Surprised expression - Eyes closed.                            |  
-| `image_startled_0`    | Filepath   | Face only - Startled expression - Eyes fully open.                         |  
-| `image_startled_1`    | Filepath   | Face only - Startled expression - Eyes half open.                          |  
-| `image_startled_2`    | Filepath   | Face only - Startled expression - Eyes closed.                             |  
-| `image_angry_0`       | Filepath   | Face only - Angry expression - Eyes fully open.                            |  
-| `image_angry_1`       | Filepath   | Face only - Angry expression - Eyes half open.                             |  
-| `image_angry_2`       | Filepath   | Face only - Angry expression - Eyes closed.                                |  
-| `image_laughing_0`    | Filepath   | Face only - Laughing expression - Eyes fully open.                         |  
-| `image_laughing_1`    | Filepath   | Face only - Laughing expression - Eyes half open.                          |  
-| `image_laughing_2`    | Filepath   | Face only - Laughing expression - Eyes closed.                             |  
-| `image_smiling_0`     | Filepath   | Face only - Smiling expression - Eyes fully open.                          |  
-| `image_smiling_1`     | Filepath   | Face only - Smiling expression - Eyes half open.                           |  
-| `image_smiling_2`     | Filepath   | Face only - Smiling expression - Eyes closed.                              |  
-| `image_grinning_0`    | Filepath   | Face only - Grinning expression - Eyes fully open.                         |  
-| `image_grinning_1`    | Filepath   | Face only - Grinning expression - Eyes half open.                          |  
-| `image_grinning_2`    | Filepath   | Face only - Grinning expression - Eyes closed.                             |  
-| `\[audio_clip_paths]` | Dictionary | `.toml` tag to declare a dictionary/collection.                            |
-| `audio_allmarvelous`  | Filepath   | Voice line saying "ALL MARVELOUS!"                                         |
-| `audio_fullcombo`     | Filepath   | Voice line saying "FULL COMBO!"                                            |
-| `audio_missless`      | Filepath   | Voice line saying "MISSLESS!"                                              |
-| `audio_clear_0`       | Filepath   | Voice line saying "CLEAR." - (neutral)                                     |
-| `audio_clear_1`       | Filepath   | Voice line saying "CLEAR!" - (enthusiastic)                                |
-| `audio_clear_2`       | Filepath   | Voice line saying "CLEAR~!!!" - (amazed)                                   |
+| Property            | Value Type | Use Case                                                                   |
+|---------------------|------------|----------------------------------------------------------------------------|
+| `guid`              | String     | A **G**lobally **U**nique **Id**entifier (GUID) to identify each cosmetic. |
+| `name`              | String     | Name of the navigator.                                                     |
+| `description`       | String     | Description of the navigator.                                              |
+| `artist`            | String     | Artist that made the navigator.                                            |
+| `voice`             | String     | Voice actor that recorded the audio.                                       |
+| `width`             | Pixels     | Width of the base image to show in-game.                                   |
+| `height`            | Pixels     | Height of the base image to show in-game.                                  |
+| `offset_x`          | Pixels     | Horizontal offset of the base image.                                       |
+| `offset_y`          | Pixels     | Vertical offset of the base image.                                         |
+| `margin_top`        | Pixels     | Top margin from base image for face image.                                 |
+| `margin_bottom`     | Pixels     | Bottom margin from base image for face image.                              |
+| `margin_left`       | Pixels     | Left margin from base image for face image.                                |
+| `margin_right`      | Pixels     | Right margin from base image for face image.                               |
+| `blink_interval`    | Seconds    | Time between blinks.                                                       |
+| `blink_duration`    | Seconds    | Time between frames of the blink animation.                                |
+| `[texture_paths]`   | Dictionary | Declares a collection of textures.                                         |
+| `[dialogues]`       | Dictionary | Declares a collection of dialogues.                                        |
+
+## Layout Properties
+
+The layout properties allow Navigators to have the correct size and position without having to modify the textures. 
+Width and Height define the size of the Navigator in-game. These values do not have to match the resolution of your texture.
+
+- Positive offset will move the navigator to the right/up.
+- Negative offset will move the navigator to the left/down.
+
+Expressions are overlaid on top of the body image. To save resources, the expression textures can be cropped to only the face and aligned to fit over the body image with the margin properties.  
+- Positive margins will shrink the face image inward.
+- Negative margins will expand the face image beyond the body image bounds.
+
+<img src="media/navigator_layout.png" alt="navigator layout">
+
+## Texture Properties
+
+| Property            | Value Type | Affected Image        | Expression | Blink State      |
+|:--------------------|------------|-----------------------|------------|------------------|
+| `image_icon`        | Filepath   | Icon in Windmill Menu | /          | /                |  
+| `image_base`        | Filepath   | Body only             | /          | /                |  
+| `image_neutral_0`   | Filepath   | Face only             | Neutral    | Eyes fully open. |  
+| `image_neutral_1`   | Filepath   | Face only             | Neutral    | Eyes half open.  |  
+| `image_neutral_2`   | Filepath   | Face only             | Neutral    | Eyes closed.     |  
+| `image_amazed_0`    | Filepath   | Face only             | Amazed     | Eyes fully open. |  
+| `image_amazed_1`    | Filepath   | Face only             | Amazed     | Eyes half open.  |  
+| `image_amazed_2`    | Filepath   | Face only             | Amazed     | Eyes closed.     |  
+| `image_troubled_0`  | Filepath   | Face only             | Troubled   | Eyes fully open. |  
+| `image_troubled_1`  | Filepath   | Face only             | Troubled   | Eyes half open.  |  
+| `image_troubled_2`  | Filepath   | Face only             | Troubled   | Eyes closed.     |  
+| `image_surprised_0` | Filepath   | Face only             | Surprised  | Eyes fully open. |  
+| `image_surprised_1` | Filepath   | Face only             | Surprised  | Eyes half open.  |  
+| `image_surprised_2` | Filepath   | Face only             | Surprised  | Eyes closed.     |  
+| `image_startled_0`  | Filepath   | Face only             | Startled   | Eyes fully open. |  
+| `image_startled_1`  | Filepath   | Face only             | Startled   | Eyes half open.  |  
+| `image_startled_2`  | Filepath   | Face only             | Startled   | Eyes closed.     |  
+| `image_angry_0`     | Filepath   | Face only             | Angry      | Eyes fully open. |  
+| `image_angry_1`     | Filepath   | Face only             | Angry      | Eyes half open.  |  
+| `image_angry_2`     | Filepath   | Face only             | Angry      | Eyes closed.     |  
+| `image_laughing_0`  | Filepath   | Face only             | Laughing   | Eyes fully open. |  
+| `image_laughing_1`  | Filepath   | Face only             | Laughing   | Eyes half open.  |  
+| `image_laughing_2`  | Filepath   | Face only             | Laughing   | Eyes closed.     |  
+| `image_smiling_0`   | Filepath   | Face only             | Smiling    | Eyes fully open. |  
+| `image_smiling_1`   | Filepath   | Face only             | Smiling    | Eyes half open.  |  
+| `image_smiling_2`   | Filepath   | Face only             | Smiling    | Eyes closed.     |  
+| `image_grinning_0`  | Filepath   | Face only             | Grinning   | Eyes fully open. |  
+| `image_grinning_1`  | Filepath   | Face only             | Grinning   | Eyes half open.  |  
+| `image_grinning_2`  | Filepath   | Face only             | Grinning   | Eyes closed.     |  
+
+### Defining Properties
+
+Textures are defined in the `[texture_paths]` dictionary. Each property can only be defined once, but different properties can share the same filepath.
+
+```toml
+# ...
+[texture_paths]
+image_base = "image/base.png"
+image_neutral_0 = "image/neutral.png"
+image_neutral_0 = "image/happy.png" # INVALID
+```
+
+```toml
+# ...
+[texture_paths]
+image_base = "image/base.png"
+image_neutral_0 = "image/neutral.png"
+image_neutral_1 = "image/neutral.png" # VALID
+```
+
+### Omitting Properties
+
+If your navigator doesn't have any expressions, you do not have to define blank expression filepaths. Instead, just omit all expression properties.
+
+```toml
+[texture_paths]
+image_base = "image/base.png"
+image_neutral_0 = ""
+image_neutral_1 = ""
+image_neutral_2 = ""
+image_amazed_0 = ""
+#...
+
+# DONT DO THIS
+```
+
+```toml
+[texture_paths]
+image_base = "image/base.png"
+
+# DO THIS
+```
+
+### Invalid Filepaths
+
+If a filepath is invalid or undefined, then the image will be invisible in SATURN.  
+If your navigator doesn't have artwork for a certain expression, don't keep the filepath undefined. Use a different expression's texture as a substitute.
+
+```toml
+[texture_paths]
+image_base = "image/base.png"
+image_neutral_0 = "image/neutral_0.png"
+image_neutral_1 = "image/neutral_1.png"
+image_neutral_2 = "image/neutral_2.png"
+image_amazed_0 = ""
+image_amazed_1 = ""
+image_amazed_2 = ""
+#...
+
+# DONT DO THIS
+```
+
+```toml
+[texture_paths]
+image_base = "image/base.png"
+image_neutral_0 = "image/neutral_0.png"
+image_neutral_1 = "image/neutral_1.png"
+image_neutral_2 = "image/neutral_2.png"
+image_amazed_0 = "image/neutral_0.png"
+image_amazed_1 = "image/neutral_1.png"
+image_amazed_2 = "image/neutral_2.png"
+#...
+
+# DO THIS
+```
+
+## Dialogue Properties
+
+
 
 ## Resolution
 
