@@ -70,7 +70,7 @@ image_base = "image/base.png"
 
 ## Layout Properties
 
-The layout properties allow Navigators to have the correct size and position without having to modify the textures. 
+The layout properties allow Navigators to have the correct size and position without having to modify their textures. 
 Width and Height define the size of the Navigator in-game. These values do not have to match the resolution of your texture.
 
 - Positive offset will move the navigator to the right/up.
