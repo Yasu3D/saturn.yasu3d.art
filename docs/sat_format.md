@@ -99,7 +99,7 @@ SATURN has a fixed set of metadata tags with different kinds of value types:
 		<tr>
 			<th>Tag</th>
 			<th>Value Type</th>
-			<th colspan="2">Purpose</th>
+			<th colspan="2">Use Case</th>
 		</tr>
 		<tr>
 			<td><code>@SAT_VERSION</code></td>
