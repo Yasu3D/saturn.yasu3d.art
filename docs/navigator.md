@@ -403,7 +403,7 @@ Instances of `[[dialogues.xy-ZW.key]]` therefore don't actually define a dialogu
 [dialogues.en-US]
     [[dialogues.en-US.attract_login_greet]]
         message = "Hello!"
-        audio_path = "audio/en-US/hello.wav"
+        audio_path = "audio/en-US/attract_login_greet.wav"
         duration = 1.0
         show_skip = false
         expression = "Grinning"
@@ -411,7 +411,7 @@ Instances of `[[dialogues.xy-ZW.key]]` therefore don't actually define a dialogu
 [dialogues.ja-JP]
     [[dialogues.ja-JP.attract_login_greet]]
         message = "こんにちは！"
-        audio_path = "audio/ja-JP/hello.wav"
+        audio_path = "audio/ja-JP/attract_login_greet.wav"
         duration = 1.0
         show_skip = false
         expression = "Grinning"
@@ -419,7 +419,7 @@ Instances of `[[dialogues.xy-ZW.key]]` therefore don't actually define a dialogu
 [dialogues.de-DE]
     [[dialogues.de-DE.attract_login_greet]]
         message = "Hallo!"
-        audio_path = "audio/de-DE/hello.wav"
+        audio_path = "audio/de-DE/attract_login_greet.wav"
         duration = 1.0
         show_skip = false
         expression = "Grinning"
@@ -466,10 +466,10 @@ For consistency, I recommend this resolution:
 
 For consistency, I recommend this naming scheme:
 
-| Property             | File Name              |
-|----------------------|------------------------|
-| Navigator File       | navigator.toml         |
-| `image_icon`         | image/icon.png         |  
-| `image_base`         | image/base.png         |  
-| `image_expression_#` | image/expression_#.png |
-| `audio xyz`          | audio/locale/xyz.wav   |
+| Property               | File Name                     |
+|------------------------|-------------------------------|
+| Navigator File         | navigator.toml                |
+| `image_icon`           | image/icon.png                |  
+| `image_base`           | image/base.png                |  
+| `image_expression_#`   | image/expression_#.png        |
+| `[dialogue_key] audio` | audio/locale/dialogue_key.wav |
