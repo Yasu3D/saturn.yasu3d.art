@@ -42,7 +42,7 @@ In this example, all chart files have their `difficulty` set to `normal`. Only `
 
 ```file tree
 .
-└── <SONG>/
+└── ExampleSong/
     ├── chart_A.sat
     ├── chart_B.sat
     ├── chart_C.sat
@@ -82,16 +82,16 @@ Here's an example file structure. It contains:
 .
 └── StreamingAssets/
     └── Music/
-        └── <FOLDER>/
+        └── ExampleFolder/
             ├── folder.toml
             ├── icon.png
-            ├── <SONG 1>/
+            ├── ExampleSong_1/
             │   ├── 0.sat
             │   ├── 1.sat
             │   ├── 2.sat
             │   ├── audio.wav
             │   └── jacket.png
-            └── <SONG 2>/
+            └── ExampleSong_2/
                 ├── 0.sat
                 ├── 1.sat
                 ├── 2.sat
@@ -105,14 +105,14 @@ A `song` directory can technically also be a `folder` directory for another `son
 .
 └── StreamingAssets/
     └── Music/
-        └── <FOLDER>/
+        └── ExampleFolder/
             ├── folder.toml
             ├── icon.png
-            └── <SONG 1>/
+            └── ExampleSong_1/
                 ├── folder.toml
                 ├── 0.sat
                 ├── ...
-                └── <SONG 2>/
+                └── ExampleSong_2/
                     ├── 0.sat
                     └── ...
 ```

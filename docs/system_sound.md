@@ -47,7 +47,7 @@ audio_textbox_appear = "textbox_appear.wav"
 └── StreamingAssets/
     └── Data/
         └── SystemSound/
-            └── <SYSTEM SOUND>/
+            └── ExampleSystemSound/
                 ├── systemsound.toml
                 ├── login.wav
                 ├── cycle_mode.wav

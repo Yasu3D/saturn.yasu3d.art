@@ -24,7 +24,7 @@ emblem_path = "emblem.png"
 └── StreamingAssets/
     └── Data/
         └── Emblem/
-            └── <EMBLEM>/
+            └── ExampleEmblem/
                 ├── emblem.toml
                 └── emblem.png
 ```

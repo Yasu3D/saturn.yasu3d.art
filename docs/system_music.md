@@ -29,7 +29,7 @@ audio_stage_up_challenger = "stage_up_challenger.wav"
 └── StreamingAssets/
     └── Data/
         └── SystemMusic/
-            └── <SYSTEM MUSIC>/
+            └── ExampleSystemMusic/
                 ├── systemmusic.toml
                 ├── attract.wav
                 ├── select.wav

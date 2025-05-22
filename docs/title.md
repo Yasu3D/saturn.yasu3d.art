@@ -16,7 +16,7 @@ description = "A sample title."
 └── StreamingAssets/
     └── Data/
         └── Title/
-            └── <TITLE>.toml
+            └── ExampleTitle.toml
 ```
 
 ## Properties

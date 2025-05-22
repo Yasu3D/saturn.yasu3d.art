@@ -24,7 +24,7 @@ icon_path = "icon.png"
 └── StreamingAssets/
     └── Data/
         └── Icon/
-            └── <ICON>/
+            └── ExampleIcon/
                 ├── icon.toml
                 └── icon.png
 ```

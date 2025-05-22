@@ -3,17 +3,17 @@
 ## File Structure
 
 Any `.toml` file in `./Data/ConsoleColor/` will be recognized as a `console color`.  
-Putting console colors in sub-directories isn't as necessary as with other cosmetics, since they're contained to one file.
+Putting console colors in subdirectories isn't as necessary as with other cosmetics, since they're contained to one file.
 
 ```toml
 guid = "00000000-0000-0000-0000-000000000000"
 name = "Sample Console Color"
-color_a = "#123ABC"
-color_b = "#123ABC"
-color_c = "#123ABC"
-led_a = "#123ABC"
-led_b = "#123ABC"
-led_c = "#123ABC"
+color_a = "#FF0000"
+color_b = "#00FF00"
+color_c = "#0000FF"
+led_a = "#FF0000"
+led_b = "#00FF00"
+led_c = "#0000FF"
 ```
 
 ```file tree
@@ -21,7 +21,7 @@ led_c = "#123ABC"
 └── StreamingAssets/
     └── Data/
         └── ConsoleColor/
-            └── <CONSOLE COLOR>.toml
+            └── ExampleConsoleColor.toml
 ```
 
 ## Properties
@@ -36,3 +36,5 @@ led_c = "#123ABC"
 | `led_a`   | Color  | Color to send to LEDs. For areas with no mask.                             |
 | `led_b`   | Color  | Color to send to LEDs. For areas with mask.                                |
 | `led_c`   | Color  | Color to send to LEDs. For areas with notes.                               |
+
+<img src="media/console_color.png" alt="console color" width="512">

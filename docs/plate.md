@@ -24,7 +24,7 @@ plate_path = "plate.png"
 └── StreamingAssets/
     └── Data/
         └── Plate/
-            └── <PLATE>/
+            └── ExamplePlate/
                 ├── plate.toml
                 └── plate.png
 ```

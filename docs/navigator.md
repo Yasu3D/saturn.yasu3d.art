@@ -34,7 +34,7 @@ image_base = "image/base.png"
 └── StreamingAssets/
     └── Data/
         └── Navigator/
-            └── <NAVIGATOR>/
+            └── ExampleNavigator/
                 └── navigator.toml/
                     ├── audio/
                     │   ├── rhythmgame_result_clear_0.wav
