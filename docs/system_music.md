@@ -70,7 +70,7 @@ audio_stage_up_challenger = "stage_up_challenger.wav"
         </tr>
         <tr>
             <th colspan="2"></th>
-            <th>This song plays when...</th>
+            <th>This music plays when...</th>
         </tr>
         <tr>
             <td><code>audio_attract</code></td>
