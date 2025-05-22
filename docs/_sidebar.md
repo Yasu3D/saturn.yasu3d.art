@@ -23,4 +23,3 @@
 
 - Format Specifications
   - [.SAT](sat_format.md)
-  - [.SCA](sca_format.md)

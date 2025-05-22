@@ -35,15 +35,14 @@ image_base = "image/base.png"
     └── Data/
         └── Navigator/
             └── ExampleNavigator/
-                └── navigator.toml/
-                    ├── audio/
-                    │   ├── rhythmgame_result_clear_0.wav
-                    │   └── ...
-                    ├── image/
-                    │   ├── base.png
-                    │   ├── icon.png
-                    │   └── ...
-                    └── navigator.toml
+                ├── navigator.toml/
+                ├── audio/
+                │   ├── rhythmgame_result_clear_0.wav
+                │   └── ...
+                └── image/
+                    ├── base.png
+                    ├── icon.png
+                    └── ...
 ```
 
 ## Properties
