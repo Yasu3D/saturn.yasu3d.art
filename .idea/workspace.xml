@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/error_messages.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/error_messages.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-view/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-view/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn/operation-info/error_messages.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/operation-info/error_messages.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn/operation-info/system_test_menu.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/operation-info/system_test_menu.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn/operation-info/usb_data_import.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/operation-info/usb_data_import.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +23,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2xyREEur4UiMxmJh4FK127OjQ43" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,6 +38,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "X:/_Software Development/saturn.yasu3d.art",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,6 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748908213571</updated>
       <workItem from="1748908214698" duration="618000" />
+      <workItem from="1764918087657" duration="21676000" />
     </task>
     <servers />
   </component>

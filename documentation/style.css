@@ -884,3 +884,7 @@ code .token {
 }
 
 :root{--theme-color: #a080d3;}
+
+kbd {
+  border-color: #707070;
+}
