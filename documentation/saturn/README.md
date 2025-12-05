@@ -1,9 +1,9 @@
 # SATURN
-
 A touch slider rhythm game that has a really cool ring, made with Unity 6.
 
 ## Download
-No public downloads are currently available.
+
+Downloads are currently unavailable.
 
 ## Recommended System Requirements
 @1080p60hz

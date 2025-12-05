@@ -1,9 +1,12 @@
 # Adding Content
 
-SATURN allows users to import various types of custom content. All user-imported data is located in the `StreamingAssets` directory.
+SATURN allows users to import various types of custom content. 
 
-SATURN uses `.toml` files for all custom content metadata. 
-You can read about what the `TOML` format is and how it works [here](https://toml.io/en/).
+Files for all custom content metadata (except charts) use the `TOML` format. 
+You can read about what that format is and how it works [here](https://toml.io/en/).
+
+All user-imported data is located in the `StreamingAssets` directory of the game.
+The relative filepath from `Saturn.exe` is `/Saturn_Data/StreamingAssets/` by default.
 
 ```file tree
 .
@@ -19,9 +22,9 @@ You can read about what the `TOML` format is and how it works [here](https://tom
             │   ├── NoteSound/
             │   ├── Plate/
             │   ├── StageUp/
+            │   ├── SystemMusic/
             │   ├── SystemSound/
             │   └── Title/
-            ├── Font/
             ├── Led/
             ├── Locales/
             └── license.txt

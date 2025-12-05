@@ -33,15 +33,8 @@ LEDs are mapped vertically like this:
 - 1px = 1/2 "square" area left/right.
   - There are 2 leds (vertically) per area.
 
-<img src="media/leds_horizontal.png" alt="horizontal led mapping" width="512">
-<img src="media/leds_horizontal_texture.png" alt="horizontal led mapping texture" width="512" style="image-rendering: pixelated">
+<img src="/documentation/saturn/media/leds_horizontal.png" alt="horizontal led mapping" width="512">
+<img src="/documentation/saturn/media/leds_horizontal_texture.png" alt="horizontal led mapping texture" width="512" style="image-rendering: pixelated">
 
-<img src="media/leds_vertical.png" alt="horizontal led mapping" width="512">
-<img src="media/leds_vertical_texture.png" alt="horizontal led mapping texture" width="512" style="image-rendering: pixelated">
-
-## HALL OF NERDS:
-
-If you want your name to be written in the HALL OF NERDS, convert Bad Apple to a valid LED animation *by yourself!*  
-[E-Mail me](mailto:contact@yasu3d.art) your results with a link to the code used to convert the video, and a link to a video of it playing.  
-The first 10 names will be written down here.
-
+<img src="/documentation/saturn/media/leds_vertical.png" alt="horizontal led mapping" width="512">
+<img src="/documentation/saturn/media/leds_vertical_texture.png" alt="horizontal led mapping texture" width="512" style="image-rendering: pixelated">
