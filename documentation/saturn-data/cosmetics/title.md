@@ -1,29 +1,6 @@
-# Adding Titles
+# Title
+A piece of text to display on the user profile. Acts like a profile status or formal title.  
+Inherits <a href="/documentation/saturn-data/index.html#/items/content_item.md">Cosmetic Item</a>.
 
-## File Structure
-
-Any `.toml` file in `./Data/Title/` will be recognized as a `title`.  
-Putting titles in sub-directories isn't as necessary as with other cosmetics, since they're contained to one file.
-
-```toml
-guid = "00000000-0000-0000-0000-000000000000"
-name = "Sample Title"
-description = "A sample title."
-```
-
-```file tree
-.
-└── StreamingAssets/
-    └── Data/
-        └── Title/
-            └── ExampleTitle.toml
-```
-
-## Properties
-
-| Property      | Type   | Use Case                                                                   |
-|---------------|--------|----------------------------------------------------------------------------|
-| `guid`        | String | A **G**lobally **U**nique **Id**entifier (GUID) to identify each cosmetic. |
-| `name`        | String | Name of the title, and the text to display as the title.                   |
-| `description` | String | Description of the title.                                                  |
-
+### Message
+The title message to display to users.

@@ -1,106 +1,24 @@
-# Adding System Music
+# System Music
+A set of background songs to play in different scenes.  
+Inherits <a href="/documentation/saturn-data/index.html#/items/content_item.md">Cosmetic Item</a>.
 
-## Supported Audio Formats
-- `.wav` (recommended)
-- `.mp3`
-- `.ogg`
+### Artist
+The creator of the system music.
 
-## File Structure
+### AudioAttractPath
+The local filepath of the "attract bgm" audio file, relative to the file that defined this cosmetic.
 
-Any `.toml` file in `./Data/SystemMusic/` will be recognized as `system music`.  
-All filepaths defined in `*.toml` are relative filepaths from the file.
+### AudioSelectPath
+The local filepath of the "select bgm" audio file, relative to the file that defined this cosmetic.
 
-```toml
-guid = "00000000-0000-0000-0000-000000000000"
-name = "Sample System Music"
-description = "Sample System Music."
-author = "author"
-audio_attract = "attract.wav"
-audio_select = "select.wav"
-audio_result = "result.wav"
-audio_see_you = "see_you.wav"
-audio_stage_up_select = "stage_up_select.wav"
-audio_stage_up_challenger = "stage_up_challenger.wav"
+### AudioResultPath
+The local filepath of the "result bgm" audio file, relative to the file that defined this cosmetic.
 
-```
+### AudioStageUpSelectPath
+The local filepath of the "stage-up select bgm" audio file, relative to the file that defined this cosmetic.
 
-```file tree
-.
-└── StreamingAssets/
-    └── Data/
-        └── SystemMusic/
-            └── ExampleSystemMusic/
-                ├── systemmusic.toml
-                ├── attract.wav
-                ├── select.wav
-                ├── result.wav
-                ├── seeyou.wav
-                ├── stage_up_select.wav
-                └── stage_up_challenger.wav
-```
+### AudioStageUpSecretPath
+The local filepath of the "stage-up secret bgm" audio file, relative to the file that defined this cosmetic.
 
-## Properties
-
-<table>
-    <tbody>
-        <tr>
-            <th>Property</th>
-            <th>Value Type</th>
-            <th>Use Case</th>
-        </tr>
-        <tr>
-            <td><code>guid</code></td>
-            <td>String</td>
-            <td>A **G**lobally **U**nique **Id**entifier (GUID) to identify each cosmetic.</td>
-        </tr>
-        <tr>
-            <td><code>name</code></td>
-            <td>String</td>
-            <td>Name of the system music.</td>
-        </tr>
-        <tr>
-            <td><code>description</code></td>
-            <td>String</td>
-            <td>Description of the system music.</td>
-        </tr>
-        <tr>
-            <td><code>author</code></td>
-            <td>String</td>
-            <td>Author of the system music.</td>
-        </tr>
-        <tr>
-            <th colspan="2"></th>
-            <th>This music plays when...</th>
-        </tr>
-        <tr>
-            <td><code>audio_attract</code></td>
-            <td>String</td>
-            <td>In the Attract scene.</td>
-        </tr>
-        <tr>
-            <td><code>audio_select</code></td>
-            <td>String</td>
-            <td>In the Mode Select or Folder Select scene.</td>
-        </tr>
-        <tr>
-            <td><code>audio_result</code></td>
-            <td>String</td>
-            <td>Viewing gameplay results.</td>
-        </tr>
-        <tr>
-            <td><code>audio_see_you</code></td>
-            <td>String</td>
-            <td>Exiting a credit.</td>
-        </tr>
-        <tr>
-            <td><code>audio_stage_up_select</code></td>
-            <td>String</td>
-            <td>Selecting a Stage Up stage.</td>
-        </tr>
-        <tr>
-            <td><code>audio_stage_up_challenger</code></td>
-            <td>String</td>
-            <td>Previewing a hidden song in Stage Up.</td>
-        </tr>
-    </tbody>
-</table>
+### AudioSeeYouPath
+The local filepath of the "see-you bgm" audio file, relative to the file that defined this cosmetic.

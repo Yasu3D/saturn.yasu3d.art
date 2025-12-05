@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/items/content_item.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/items/cosmetic_item.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-view/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-view/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn/operation-info/error_messages.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/operation-info/error_messages.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn/operation-info/system_test_menu.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/operation-info/system_test_menu.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn/operation-info/usb_data_import.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/operation-info/usb_data_import.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/console_color.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/console_color.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/cosmetic_item.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/emblem.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/emblem.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/icon.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/icon.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/navigator.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/navigator.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/note_sound.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/note_sound.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/plate.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/plate.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/system_music.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/system_music.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/system_sound.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/system_sound.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/title.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/title.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/stage_up.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/stage-up/stage_up_stage.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748908213571</updated>
       <workItem from="1748908214698" duration="618000" />
-      <workItem from="1764918087657" duration="21676000" />
+      <workItem from="1764918087657" duration="29545000" />
     </task>
     <servers />
   </component>
