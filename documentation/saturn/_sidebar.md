@@ -2,12 +2,13 @@
 
 - [Introduction]()
 
-- [Adding Content](adding-content/index.md)
-  - [Music](adding-content/music.md)
-  - [Stage Up](adding-content/stage_up.md)
-  - [Cosmetics](adding-content/cosmetics.md)
-  - [Locales](adding-content/locales.md)
-  - [LED Animations](adding-content/led.md)
+- Custom Content
+  - [Adding Content](custom-content/adding_content.md)
+  - [Music](custom-content/music.md)
+  - [Stage Up](custom-content/stage_up.md)
+  - [Cosmetics](custom-content/cosmetics.md)
+  - [Locales](custom-content/locales.md)
+  - [LED Animations](custom-content/led.md)
 
 - Operation Info
   - [System Test Menu](operation-info/system_test_menu.md)
