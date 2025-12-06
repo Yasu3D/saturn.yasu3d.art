@@ -2,6 +2,8 @@
 A character that accompanies the user throughout gameplay.  
 Inherits <a href="/documentation/saturn-data/index.html#/items/content_item.md">Cosmetic Item</a>.
 
+## Properties
+
 ### Artist
 The creator of the navigator artwork.
 
@@ -82,6 +84,16 @@ The local filepaths of the navigator artwork images, relative to the file that d
 | see_you_c        | The image to display on the "see you" screen when a stage up stage has been cleared. |
 
 ### DialogueLanguages
-The collection of textbox dialogues and accompanying voice lines, grouped by language.
+The dictionary of textbox dialogues and accompanying voice lines, grouped by language.  
+Keys are locale codes, values are Navigator Dialogue Languages.
 
-TODO
+## NavigatorDialogueLanguage
+`NavigatorDialogueLanguages` represent a language that a navigator can speak.
+They contain a collection of `NavigatorDialogueVariantCollections`.
+
+## NavigatorDialogueVariantCollection
+`NavigatorDialogueVariantCollections` represent a type of dialogue a navigator can say.  
+They contain a collection of `NavigatorDialogues`, which are chosen at random when the dialogue variant is displayed.
+
+## NavigatorDialogue
+`NavigatorDialogues` represent a specific variation of a dialogue that a navigator can say.

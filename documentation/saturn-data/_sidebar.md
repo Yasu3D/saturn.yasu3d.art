@@ -2,6 +2,11 @@
 
 - [Introduction]()
 
+- Guides
+  - Getting Started
+  - Reading a Chart from a File
+  - Writing a Chart to a File
+
 - Items
   - [Content Item](items/content_item.md)
   - [Cosmetic Item](items/cosmetic_item.md)
@@ -27,6 +32,26 @@
 - Notation
   - Chart
   - Entry
+  - Events
+    - Tempo Change Event
+    - Metre Change Event
+    - Tutorial Marker
+    - Speed Change Event
+    - Visibility Change Event
+    - Stop Effect Event
+    - Reverse Effect Event
+  - Notes
+    - Touch Note
+    - Chain Note
+    - Hold Note
+    - Slide Clockwise Note
+    - Slide Counterclockwise Note
+    - Snap Forward Note
+    - Snap Backward Note
+    - Sync Note
+    - Measure Line Note
+    - Lane Show Note
+    - Lane Hide Note
   - Format Specifications
     - MER
     - SATv1

@@ -2,6 +2,8 @@
 A color theme of the input console.  
 Inherits <a href="/documentation/saturn-data/index.html#/items/content_item.md">Cosmetic Item</a>.
 
+## Properties
+
 ### ColorA
 The color to display in-game for areas with hidden lanes.
     

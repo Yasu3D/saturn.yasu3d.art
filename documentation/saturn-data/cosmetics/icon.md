@@ -2,6 +2,8 @@
 A primary icon to display on the user profile. Acts like a profile picture.  
 Inherits <a href="/documentation/saturn-data/index.html#/items/content_item.md">Cosmetic Item</a>.
 
+## Properties
+
 ### Artist
 The creator of the icon image.
 

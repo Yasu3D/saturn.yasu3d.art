@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/items/content_item.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/items/cosmetic_item.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/console_color.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/console_color.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/cosmetic_item.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/emblem.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/emblem.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/icon.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/icon.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/navigator.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/navigator.md" afterDir="false" />
@@ -19,16 +16,23 @@
       <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/system_music.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/system_music.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/system_sound.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/system_sound.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/title.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/cosmetics/title.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/stage_up.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/stage-up/stage_up_stage.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -45,6 +49,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "X:/_Software Development/saturn.yasu3d.art",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,12 +67,14 @@
       <updated>1748908213571</updated>
       <workItem from="1748908214698" duration="618000" />
       <workItem from="1764918087657" duration="29545000" />
+      <workItem from="1765044530485" duration="9003000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

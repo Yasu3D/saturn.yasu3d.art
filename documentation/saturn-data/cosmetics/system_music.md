@@ -2,6 +2,8 @@
 A set of background songs to play in different scenes.  
 Inherits <a href="/documentation/saturn-data/index.html#/items/content_item.md">Cosmetic Item</a>.
 
+## Properties
+
 ### Artist
 The creator of the system music.
 

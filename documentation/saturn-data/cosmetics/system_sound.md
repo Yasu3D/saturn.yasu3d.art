@@ -2,6 +2,8 @@
 A set of menu sound effects to play on UI interactions.  
 Inherits <a href="/documentation/saturn-data/index.html#/items/content_item.md">Cosmetic Item</a>.
 
+## Properties
+
 ### Artist
 The creator of the system sound.
 
