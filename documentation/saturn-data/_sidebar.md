@@ -1,5 +1,3 @@
-<!-- docs/_sidebar.md -->
-
 - [Introduction]()
 
 - Guides
@@ -22,41 +20,22 @@
   - [System Sound](cosmetics/system_sound.md)
   - [Title](cosmetics/title.md)
 
-- Music
-  - Folder
-  - Song
-
 - Stage Up
-  - Stage Up Stage
+  - [Stage Up Stage](stage-up/stage_up_stage.md)
+  - [Stage Up Song](stage-up/stage_up_song.md)
+
+- Music
+  - [Folder](music/folder.md)
+  - [Song](music/song.md)
 
 - Notation
-  - Chart
-  - Entry
-  - Events
-    - Tempo Change Event
-    - Metre Change Event
-    - Tutorial Marker
-    - Speed Change Event
-    - Visibility Change Event
-    - Stop Effect Event
-    - Reverse Effect Event
-  - Notes
-    - Touch Note
-    - Chain Note
-    - Hold Note
-    - Slide Clockwise Note
-    - Slide Counterclockwise Note
-    - Snap Forward Note
-    - Snap Backward Note
-    - Sync Note
-    - Measure Line Note
-    - Lane Show Note
-    - Lane Hide Note
+  - [Entry](notation/entry.md)
+  - [Chart](notation/chart.md)
   - Format Specifications
-    - MER
-    - SATv1
-    - SATv2
-    - SATv3
+    - [MER](notation/format-specifications/mer.md)
+    - [SATv1](notation/format-specifications/sat_v1.md)
+    - [SATv2](notation/format-specifications/sat_v2.md)
+    - [SATv3](notation/format-specifications/sat_v3.md)
 
 - See Also
   - <a href="/documentation/saturn/index.html">SATURN Documentation</a>

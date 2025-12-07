@@ -8,3 +8,6 @@ The string used to identify a content item.
 
 ### Name
 The name for a content item to display to users.
+
+### AbsoluteSourcePath
+The absolute path to the file that defined the content item.

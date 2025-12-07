@@ -13,6 +13,8 @@ Downloads are currently unavailable.
 - RAM: **4GB** or more.
 - SSD: **1GB** or more.
 
-SATURN is not very demanding on the GPU and _may_ even run on integrated graphics.  
-Storage and Memory usage both depend on the amount of content that has been added.  
-Memory usage will increase over time as content is loaded and cached.
+> SATURN is not very demanding on the GPU and _may_ even run on integrated graphics.  
+
+> Storage and Memory usage both depend on the amount of content that has been added.  
+
+> Memory usage will increase over time as content is loaded and cached.

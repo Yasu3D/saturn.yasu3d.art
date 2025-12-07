@@ -1,7 +1,7 @@
 # Adding Music
 > 💡 This page explains the file structure for music and chart files, and how they're read by SATURN.
 > If you want to learn more about how to create charts, refer to this page:  
-> <a href="/documentation/saturn-edit/index.html">SaturnEdit Documentation</a>
+> <a href="/documentation/saturn-edit/index.html">SATURN EDIT Documentation</a>
 
 Music and Chart files are stored in `/StreamingAssets/Data/Music/`.  
 All files placed in this directory or any subdirectory will be parsed by SATURN.
@@ -30,6 +30,9 @@ All files placed in this directory or any subdirectory will be parsed by SATURN.
 Each `.sat` file defines one `entry`.  
 Each `entry` contains metadata (info about the song) and a chart (collection of notes).
 
+During the song selection scene, SATURN displays the metadata of the currently selected `entry`.  
+This allows a song to have different titles, artists, jackets, etc. for each `difficulty`.
+
 ## Songs
 Any directory containing **one or more** `.sat` files will be recognized as a `song`.  
 A `song` has five slots for `entries`, one of each `difficulty`:
@@ -45,14 +48,14 @@ A `song` has five slots for `entries`, one of each `difficulty`:
 Paths to media (audio, video, images) defined in each `.sat` file are relative filepaths from the `.sat` file.  
 All media should be in the same directory as chart files, or a subdirectory. (not recommended)
 
-> ⚠️ If a `song` has two or more `entries` with the same `difficulty`, only the last one in **ascending alphabetical order** will be loaded in SATURN.
+> ⚠️ If a `song` directory contains two or more `.sat` files with the same `difficulty` defined, only the last one in **ascending alphabetical order** will be loaded in SATURN.
 
 ## Folders
 Any directory containing **one or more** `song` directories will be recognized as a `folder`.  
 If a `folder.toml` file is present, it specifies the `folder`'s metadata.
 
 > 💡 For more information, refer to this page:  
-> [SaturnData Folder Documentation](/documentation/saturn-data/index.html#/music/folder.md).
+> <a href="/documentation/saturn-data/index.html#/music/folder.md">SATURN DATA Folder Documentation</a>.
 
 ## File Structure
 Here's an example file structure. It contains:  
