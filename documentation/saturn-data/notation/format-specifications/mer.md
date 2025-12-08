@@ -2,7 +2,7 @@
 The original file format for Chart files.  
 This format was *not* developed by me (yasu3d). Credit goes to the respective authors.
 
-> Disclaimer: Since I didn't design the format, this specification is only a set of very confident educated guesses.
+> Disclaimer: Since I didn't develop the format, this specification is only a set of very confident educated guesses.
 
 ## Spec
 - MER is a plaintext file encoded in UTF-8.
