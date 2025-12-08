@@ -8,7 +8,7 @@ This format was *not* developed by me (yasu3d). Credit goes to the respective au
 - MER is a plaintext file encoded in UTF-8.
 - Valid file extensions for the MER format are: `.mer`
 - Deserializers for MER may be case-sensitive.
-- Only one Object can be defined per line.
+- Only one Metadata value or Object can be defined per line.
 - Valid whitespace characters are: Space ` ` `(0x20)`
 - Valid newline characters are: LF `\n` `(0x0A)` or CRLF `\r\n` `(0x0D 0x0A)`
 - Valid decimal separators are: Period `.` `(0x2e)`
@@ -92,19 +92,19 @@ WacK conversion Chart files contain additional Metadata that SATURN DATA can rea
 | `#PREVIEW_LENGTH` | Preview length in seconds.     |
 
 ## Timing
-Objects are timed with "measures" and "ticks".
+Objects are timed with "Measures" and "Ticks".
 
 ### Measure
-A measure corresponds to a bar / measure in standard music notation. It serves as the most basic time division.  
+A Measure corresponds to a bar / Measure in standard music notation. It serves as the most basic time division.  
 
 > Measures begin at 0 and have no maximum value.  
 > They must be an integer.
 
 ### Tick
-Each measure is subdivided into 1920 ticks. They allow for more precise placement of Notes and evenly divide into common rhythmic subdivisions in music.  
-Ticks are not beats. They function directly as a positional reference within a measure, regardless of metre.
+Each Measure is subdivided into 1920 Ticks. They allow for more precise placement of Notes and evenly divide into common rhythmic subdivisions in music.  
+Ticks are not beats. They function directly as a positional reference within a Measure, regardless of metre.
 
-> Ticks begin at 0 and have a maximum value of 1919, as the timestamp would roll over to the next measure on the 1920th tick.  
+> Ticks begin at 0 and have a maximum value of 1919, as the timestamp would roll over to the next Measure on the 1920th Tick.  
 > They must be an integer.
 
 ## Coordinate System
@@ -115,7 +115,7 @@ The circle is split into 60 lanes, each taking up a 6° arc.
 The Position of a Note defines the clockwise-most lane it occupies.  
 Positions begin at 3 o' Clock, then move counterclockwise as they increase.
 
-> Positions begin at 0 and have a maximum value of 59, as they would roll over to 0 at lane 60.  
+> Positions begin at 0 and have a maximum value of 59, as they roll over back to 0 at lane 60.  
 > They must be an integer.
 
 #### Example - Position 0
@@ -225,8 +225,8 @@ Columns 1-3 are the same for all Objects, subsequent columns will vary, dependin
 | Col 1:<br/>Measure | Col 2:<br/>Tick | Col 3:<br/>Object Type | Col 4:<br/>Tempo | Col 5:<br/>Unused | Col 6:<br/>Unused | Col 7:<br/>Unused | Col 8:<br/>Unused | Col 9:<br/>Unused |
 |--------------------|-----------------|------------------------|------------------|-------------------|-------------------|-------------------|-------------------|-------------------|
 | 0                  | 0               | 2 (Tempo Change Event) | 120.000000       | -                 | -                 | -                 | -                 | -                 |
-| 8                  | 0               | 2 (Tempo Change Event) | 130.000000       | -                 | -                 | -                 | -                 | -                 |
-| 12                 | 480             | 2 (Tempo Change Event) | 80.000000        | -                 | -                 | -                 | -                 | -                 |
+| 8                  | 480             | 2 (Tempo Change Event) | 130.000000       | -                 | -                 | -                 | -                 | -                 |
+| 12                 | 0               | 2 (Tempo Change Event) | 80.000000        | -                 | -                 | -                 | -                 | -                 |
 
 #### Speed Change Example:
 ```MER
