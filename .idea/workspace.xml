@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/mer.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/mer.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +63,7 @@
       <workItem from="1764918087657" duration="29545000" />
       <workItem from="1765044530485" duration="9003000" />
       <workItem from="1765107131906" duration="22807000" />
-      <workItem from="1765188908834" duration="25633000" />
+      <workItem from="1765188908834" duration="25984000" />
     </task>
     <servers />
   </component>
