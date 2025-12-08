@@ -5,26 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/music/song.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/chart.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/entry.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/mer.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/sat_v1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/sat_v2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/sat_v3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/stage-up/stage_up_song.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/items/content_item.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/items/content_item.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/music/folder.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/music/folder.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/stage-up/stage_up_stage.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/stage-up/stage_up_stage.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-view/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-view/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn/custom-content/cosmetics.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/custom-content/cosmetics.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn/custom-content/music.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/custom-content/music.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn/custom-content/stage_up.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/custom-content/stage_up.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn/operation-info/error_messages.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/operation-info/error_messages.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/mer.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/mer.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -51,22 +37,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;X:/_Software Development/saturn.yasu3d.art&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "X:/_Software Development/saturn.yasu3d.art",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="" />
@@ -77,7 +64,8 @@
       <workItem from="1748908214698" duration="618000" />
       <workItem from="1764918087657" duration="29545000" />
       <workItem from="1765044530485" duration="9003000" />
-      <workItem from="1765107131906" duration="11275000" />
+      <workItem from="1765107131906" duration="22807000" />
+      <workItem from="1765188908834" duration="25633000" />
     </task>
     <servers />
   </component>
