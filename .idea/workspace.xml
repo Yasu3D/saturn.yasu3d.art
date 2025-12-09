@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/prism-sat.js" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/prism-sat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/mer.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/mer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/sat_v1.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/sat_v1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/sat_v2.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/sat_v2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/sat_format.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +73,8 @@
       <workItem from="1765188908834" duration="26705000" />
       <workItem from="1765224063526" duration="999000" />
       <workItem from="1765232195725" duration="1584000" />
+      <workItem from="1765294114555" duration="4020000" />
+      <workItem from="1765313834757" duration="5873000" />
     </task>
     <servers />
   </component>

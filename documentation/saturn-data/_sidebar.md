@@ -33,8 +33,6 @@
   - [Chart](notation/chart.md)
   - Format Specifications
     - [MER](notation/format-specifications/mer.md)
-    - [SATv1](notation/format-specifications/sat_v1.md)
-    - [SATv2](notation/format-specifications/sat_v2.md)
     - [SATv3](notation/format-specifications/sat_v3.md)
 
 - See Also

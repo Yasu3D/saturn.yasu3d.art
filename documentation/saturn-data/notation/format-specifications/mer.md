@@ -6,19 +6,14 @@ This format was *not* developed by me (yasu3d). Credit goes to the respective au
 
 ## Spec
 - MER is a plaintext file encoded in UTF-8.
-- Valid file extensions for the MER format are: `.mer`
+- Valid file extensions for MER format files are: `.mer`
 - Deserializers for MER may be case-sensitive.
 - Only one Metadata value or Object can be defined per line.
 - Valid whitespace characters are: Space ` ` `(0x20)`
 - Valid newline characters are: LF `\n` `(0x0A)` or CRLF `\r\n` `(0x0D 0x0A)`
 - Valid decimal separators are: Period `.` `(0x2e)`
 - Serializers and Deserializers **must** use `InvariantCulture` for string conversions.
-- The amount of whitespace and newlines between blocks of data is arbitrary, but adhering to [Design Rules](#design-rules) is recommended for consistency.  
-
-## File Structure
-A MER file consists of a Header and a Body.  
-The Header contains Metadata, the Body contains Event and Note data.  
-They are separated by the `#BODY` Metadata Tag.
+- The amount of whitespace and newlines between blocks of data is arbitrary, but adhering to [Design Rules](#design-rules) is recommended for consistency.
 
 ## Metadata
 Metadata Tags must begin with a Number sign `#`.
@@ -199,6 +194,11 @@ Lane Toggles (Lane Show/Lane Hide Notes) define a direction for their sweep anim
 | `GUIDE_LANE_DIRECTION_PLUS`       | 0  | Counterclockwise |
 | `GUIDE_LANE_DIRECTION_MINUS`      | 1  | Clockwise        |
 | `GUIDE_LANE_DIRECTION_PLUS_MINUS` | 2  | Center, outward  |
+
+## File Structure
+A MER file consists of a Header and a Body.  
+The Header contains Metadata, the Body contains Event and Note data.  
+They are separated by the `#BODY` Metadata Tag.
 
 ## Table Structure
 Objects are defined in a table of numbers, with columns divided by whitespace.  
