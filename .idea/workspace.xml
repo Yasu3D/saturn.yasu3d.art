@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/guides/faq.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/guides/getting_started.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/guides/reading_charts.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/guides/reading_other_content.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/guides/writing_charts.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/guides/writing_other_content.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/saturn-edit/guides/migration_guide.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/saturn-edit/setup/audio.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/saturn-edit/setup/editor.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/guides/faq.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/guides/faq.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/guides/getting_started.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/guides/getting_started.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,8 @@
       <workItem from="1765313834757" duration="6314000" />
       <workItem from="1765404341202" duration="5342000" />
       <workItem from="1765455445802" duration="10565000" />
-      <workItem from="1765496658068" duration="6872000" />
+      <workItem from="1765496658068" duration="7177000" />
+      <workItem from="1765545302922" duration="17602000" />
     </task>
     <servers />
   </component>

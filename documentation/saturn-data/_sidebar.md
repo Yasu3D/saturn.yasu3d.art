@@ -1,7 +1,7 @@
 - [Introduction]()
 
 - Guides
-  - [What is SATURN DATA?](guides/getting_started.md)
+  - [Getting Started](guides/getting_started.md)
   - [FAQ](guides/faq.md)
   - [Reading a Chart from a File](guides/reading_charts.md)
   - [Writing a Chart to a File](guides/writing_charts.md)
