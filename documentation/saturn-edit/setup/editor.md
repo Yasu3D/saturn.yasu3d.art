@@ -1,5 +1,5 @@
 # Editor Setup
-SATURN EDIT does not have an installer! It should just be a `.zip` file containing the executable, assets, and a lot of dotnet libraries.  
+SATURN EDIT does not have an installer! It should just be a `.zip` file containing the executable, assets, and a lot of .NET framework libraries. (`.dll` extension on Windows, `.dll` and `.so` on Linux)  
 If you downloaded an installer or _just_ an executable file and nothing else, it's either faulty or malware. **DO NOT RUN IT!**
 
 1. Download the latest version of SATURN EDIT.
@@ -7,7 +7,7 @@ If you downloaded an installer or _just_ an executable file and nothing else, it
 3. Open the extracted folder.
 4. Locate and run the `SaturnEdit` executable.
 
-> If you are migrating from an older editor that isn't SATURN EDIT, I recommend reading the [Migration Guide](guides/migration_guide.md).
+> If you are migrating from an older editor that isn't SATURN EDIT, I recommend reading the [Transition Guide](guides/transition_guide.md).
 
 > For the time being, hitsounds are not included by default! You must source these yourself.  
 > For more information about how to select hitsounds in the editor, please see [Audio Setup](setup/audio.md#Hitsounds).
