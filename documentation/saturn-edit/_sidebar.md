@@ -1,6 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 - [Introduction]()
+- [FAQ](faq.md)
 
 - Setup
   - [Editor Setup](setup/editor.md)
