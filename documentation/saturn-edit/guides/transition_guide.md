@@ -3,7 +3,7 @@ SATURN EDIT should be a familiar face to people coming from previous editors.
 Some things have changed though, so this guide is here to assist users making the switch to SATURN EDIT.
 
 > [!NOTE]
-> Thank you for switching to SATURN EDIT! I really hope you like it.
+> Thank you for trying SATURN EDIT! I really hope you like it.
 
 ## Name Changes
 A few terms have been renamed to either better describe their purpose, correct misnomers, or to match their name in SATURN and the SAT format.
@@ -64,6 +64,14 @@ That means you can now select and edit Notes, Events, and Bookmarks all at the s
 Box select is no longer an operation that requires a shortcut to activate. It now works like the box select function in a file explorer: Just click and drag!
 
 Selecting things no longer requires <kbd>Shift</kbd> to be held down. Instead, selection behaviour can be changed by pressing modifier keys, like in a file explorer.
+
+Selecting overlapping objects is now also possible because of a new selection priority system. 
+Objects that haven't been selected will be prioritized, so if two objects overlap you can click once to select the first, and a second time to select the second object.  
+Objects will also indicate when your mouse is hovering over them, which should make working with selections much more convenient.
+
+> [!TIP]
+> If you'd like to learn more about how the selection system works, refer to this page:  
+> [TODO: ADD LINK]()
 
 ## Editor Modes
 Editor modes have been added. They follow the same object-/edit-mode pattern as Blender.  
@@ -141,5 +149,5 @@ If you wish to create a chart file in an older format, use the `Export` feature.
 > `.map` files can still be imported, but you will be prompted to save it as a new `.sat` file.
 
 > [!ATTENTION]
-> _Please_ do not rename `.sat` files to `.map` for some kind of "compatibility".  
+> _Please_ do not save new `.sat` files as `.map` (or rename them) for some kind of "compatibility".  
 > That's not how file extensions work.
