@@ -11,6 +11,7 @@ A few terms have been renamed to either better describe their purpose, correct m
 | Old Name            | New Name         |
 |---------------------|------------------|
 | Gimmick             | Event            |
+| Comment             | Bookmark         |
 | Mask Note (Generic) | Lane Toggle Note |
 | Mask Add Note       | Lane Show Note   |
 | Mask Remove Note    | Lane Hide Note   |
