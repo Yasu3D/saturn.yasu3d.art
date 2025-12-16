@@ -11,3 +11,6 @@ You can add new Tool Windows by navigating to this location:
 ```
 View | Tool Windows | ...
 ```
+
+## This Editor looks very different to what I'm used to. How do I do X now?
+Please read the [Transition Guide](guides/transition_guide.md).
