@@ -28,12 +28,15 @@ The amount of health to recover between songs.
 
 ### RainbowClearThreshold
 The threshold where a clear counts as a rainbow clear.
+> [!NOTE]
 > This value will always be 100% of the `Health` value.
 
 ### GoldClearThreshold
 The threshold where a clear counts as a gold clear.
+> [!NOTE]
 > This value will always be 80% of the `Health` value.
 
 ### SilverClearThreshold
 The threshold where a clear counts as a silver clear.
+> [!NOTE]
 > This value will always be 50% of the `Health` value.

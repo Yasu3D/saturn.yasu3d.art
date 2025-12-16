@@ -889,3 +889,8 @@ code .token {
 kbd {
   border-color: #707070;
 }
+
+.alert.callout {
+  background: #ffffff04 !important;
+  border: 1px solid #444 !important;
+}

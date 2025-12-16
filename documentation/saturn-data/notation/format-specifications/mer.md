@@ -2,7 +2,8 @@
 The original file format for Chart files.  
 This format was *not* developed by me (yasu3d). Credit goes to the respective authors.
 
-> Disclaimer: Since I didn't develop the format, this specification is only a set of very confident educated guesses.
+> [!IMPORTANT]
+> Since I didn't develop the format, this specification is only a set of very confident educated guesses.
 
 ## Spec
 - MER is a plaintext file encoded in UTF-8.
@@ -92,6 +93,7 @@ Objects are timed with "Measures" and "Ticks".
 ### Measure
 A Measure corresponds to a bar / Measure in standard music notation. It serves as the most basic time division.  
 
+> [!IMPORTANT]
 > Measures begin at 0 and have no maximum value.  
 > They must be an integer.
 
@@ -99,6 +101,7 @@ A Measure corresponds to a bar / Measure in standard music notation. It serves a
 Each Measure is subdivided into 1920 Ticks. They allow for more precise placement of Notes and evenly divide into common rhythmic subdivisions in music.  
 Ticks are not beats. They function directly as a positional reference within a Measure, regardless of metre.
 
+> [!IMPORTANT]
 > Ticks begin at 0 and have a maximum value of 1919, as the timestamp would roll over to the next Measure on the 1920th Tick.  
 > They must be an integer.
 
@@ -110,6 +113,7 @@ The circle is split into 60 lanes, each taking up a 6° arc.
 The Position of a Note defines the clockwise-most lane it occupies.  
 Positions begin at 3 o' Clock, then move counterclockwise as they increase.
 
+> [!IMPORTANT]
 > Positions begin at 0 and have a maximum value of 59, as they roll over back to 0 at lane 60.  
 > They must be an integer.
 
@@ -126,6 +130,7 @@ Positions begin at 3 o' Clock, then move counterclockwise as they increase.
 The Size of a Note defines how many lanes it spans across. 
 Notes always sweep **counterclockwise** from their starting Position.
 
+> [!IMPORTANT]
 > Sizes begin at 1 and have a maximum value of 60.  
 > They must be an integer.
 

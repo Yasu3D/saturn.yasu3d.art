@@ -35,24 +35,36 @@ The string to display on a small additional folder label.
 
 ### Entries
 Entries in the folder, sorted by individual metadata.
+
+> [!NOTE]
 > Used for difficulty-independent grouping.
 
 ### NormalSongs
 Songs in the folder, sorted by Normal difficulty metadata
+
+> [!NOTE]
 > Used for standard grouping, within each difficulty.
 
 ### HardSongs
 Songs in the folder, sorted by Hard difficulty metadata
+
+> [!NOTE]
 > Used for standard grouping, within each difficulty.
 
 ### ExpertSongs
 Songs in the folder, sorted by Expert difficulty metadata
+
+> [!NOTE]
 > Used for standard grouping, within each difficulty.
 
 ### InfernoSongs
 Songs in the folder, sorted by Inferno difficulty metadata
+
+> [!NOTE]
 > Used for standard grouping, within each difficulty.
 
 ### WorldsEndSongs
 Songs in the folder, sorted by World's End difficulty metadata
+
+> [!NOTE]
 > Used for standard grouping, within each difficulty.

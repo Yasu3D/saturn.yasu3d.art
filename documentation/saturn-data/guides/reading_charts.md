@@ -4,7 +4,8 @@ To automatically determine the correct format and read a Chart from any file, us
 `NotationSerializer` has two available methods: `ToEntry()` and `ToChart()`.  
 These allow you to read a chart file's metadata and chart data separately.
 
-> ⚠️ Don't forget to run `Chart.Build()` after loading a Chart into memory with `ToChart()` to prepare it for rendering/gameplay!
+> [!IMPORTANT]
+> Don't forget to run `Chart.Build()` after loading a Chart into memory with `ToChart()` to prepare it for rendering/gameplay!
 
 ## NotationReadArgs
 SATURN DATA offers a few options when importing MER, SATv1 and SATv2 files.

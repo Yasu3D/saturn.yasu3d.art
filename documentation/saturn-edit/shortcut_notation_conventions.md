@@ -17,4 +17,5 @@
 | <kbd>MMB</kbd>                           | Middle Mouse Button (Usually clicking the mouse wheel) |
 | <kbd>WheelUp</kbd>, <kbd>WheelDown</kbd> | Scrolling the mouse wheel.                             |
 
-> Note: These shortcut notation conventions are inspired by the Blender 5.0 Manual.
+> [!NOTE]
+> These shortcut notation conventions are inspired by the Blender 5.0 Manual.

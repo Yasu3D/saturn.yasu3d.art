@@ -8,7 +8,8 @@ To get a specific type of content item from a file, first read all text from the
 
 For more information, refer to [Tomlyn's documentation](https://github.com/xoofx/Tomlyn/blob/main/doc/readme.md) and the [TOML format specification](https://toml.io/en/v1.0.0).
 
-> ⚠️ Tomlyn will throw an exception when it encounters invalid data. You must catch and handle these exceptions yourself.
+> [!WARNING]
+> Tomlyn will throw an exception when it encounters invalid data. You must catch and handle these exceptions yourself.
 
 ```csharp
 // Read all text from a file at "C:\Path\To\example_icon.toml"

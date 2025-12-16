@@ -31,7 +31,8 @@ The **relative** filepath of the image file is `jacket.png`.
 To get the **absolute** filepath of the image file, the **source directory** and **relative** filepath are combined:  
 `C:/.../Music/Song_1/` + `jacket.png` = `C:/.../Music/Song_1/jacket.png`
 
-> WARNING: Relative filepaths normally allow you to traverse backwards in the file tree by using `../`.  
+> [!IMPORTANT]
+> Relative filepaths normally allow you to traverse backwards in the file tree by using `../`.  
 > This is *technically* supported by the SAT specifications, but heavily discouraged and unsupported in SATURN EDIT.  
 > Please follow the file structure conventions shown in this documentation.
 

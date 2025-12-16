@@ -18,11 +18,15 @@ The height of the in-game UI element in pixels.
 
 ### OffsetX
 The horizontal offset to apply to the in-game UI element.
+
+> [!NOTE]
 > Negative values move UI element left.  
 > Positive values move UI element right.
 
 ### OffsetY
 The vertical offset to apply to the in-game UI element.
+
+> [!NOTE]
 > Negative values move UI element down.  
 > Positive values move UI element up.
 

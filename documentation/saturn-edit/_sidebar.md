@@ -1,6 +1,8 @@
 <!-- docs/_sidebar.md -->
 
 - [Introduction]()
+- [Shortcut Notation Conventions](shortcut_notation_conventions.md)
+- [Glossary](glossary.md)
 - [FAQ](faq.md)
 
 - Setup
@@ -10,7 +12,6 @@
 
 - Guides
   - [Transition Guide](guides/transition_guide.md)
-  - [Shortcut Notation Conventions](guides/shortcut_notation_conventions.md)
   - [Working with Filepaths in SATURN EDIT](guides/working_with_filepaths.md)
 
 - See Also

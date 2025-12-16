@@ -1,5 +1,6 @@
 # Adding Music
-> 💡 This page explains the file structure for music and chart files, and how they're read by SATURN.
+> [!NOTE]
+> This page explains the file structure for music and chart files, and how they're read by SATURN.
 > If you want to learn more about how to create charts, refer to this page:  
 > <a href="/documentation/saturn-edit/index.html">SATURN EDIT Documentation</a>
 
@@ -23,7 +24,8 @@ All files placed in this directory or any subdirectory will be parsed by SATURN.
 - `.webm` (recommended)
 - `.mp4`
 
-> 💡 SATURN uses the standard Unity Video Player. To see all supported video formats, refer to this page:  
+> [!NOTE]
+> SATURN uses the standard Unity Video Player. To see all supported video formats, refer to this page:  
 > [Unity Engine Video Player Documentation](https://docs.unity3d.com/Manual/VideoSources-FileCompatibility.html)
 
 ## Entries
@@ -48,13 +50,15 @@ A `song` has five slots for `entries`, one of each `difficulty`:
 Paths to media (audio, video, images) defined in each `.sat` file are relative filepaths from the `.sat` file.  
 All media should be in the same directory as chart files, or a subdirectory. (not recommended)
 
-> ⚠️ If a `song` directory contains two or more `.sat` files with the same `difficulty` defined, only the last one in **ascending alphabetical order** will be loaded in SATURN.
+> [!IMPORTANT]
+> If a `song` directory contains two or more `.sat` files with the same `difficulty` defined, only the last one in **ascending alphabetical order** will be loaded in SATURN.
 
 ## Folders
 Any directory containing **one or more** `song` directories will be recognized as a `folder`.  
 If a `folder.toml` file is present, it specifies the `folder`'s metadata.
 
-> 💡 For more information, refer to this page:  
+> [!TIP]
+> For more information, refer to this page:  
 > <a href="/documentation/saturn-data/index.html#/music/folder.md">SATURN DATA Folder Documentation</a>.
 
 ## File Structure

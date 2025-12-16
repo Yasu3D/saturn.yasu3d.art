@@ -7,10 +7,14 @@ Entries represent a [Song's](/music/song.md) "difficulty" in SATURN, and get sor
 
 ### Id
 The string used to identify an Entry.
+
+> [!NOTE]
 > It's recommended to use a universally unique identifier (UUID) for the Id, but the value doesn't have to conform to any standard.
 
 ### FormatVersion
 The format version of the file that defined this entry.
+
+> [!IMPORTANT]
 > If the entry was not created by deserializing a file, the default value should be kept instead.
 
 ### Title
@@ -27,6 +31,8 @@ The bpm text to display on the song select screen.
 
 ### Revision
 The current revision of the chart.
+
+> [!NOTE]
 > This property is optional and only meant for users to keep track of different chart revisions.
 
 ### NotesDesigner
@@ -71,6 +77,7 @@ The default background for the chart.
 | StageUp           | Displays a Stage Up mode background.                          |
 | Jacket            | Displays a song's jacket as a background.                     |
 
+> [!NOTE]
 > This value can be overwritten by players in SATURN.
 
 ### RootDirectory

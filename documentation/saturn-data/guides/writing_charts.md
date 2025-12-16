@@ -3,7 +3,8 @@ To write a chart and its metadata to a file, use the `NotationSerializer` class.
 
 `NotationSerializer` has to available methods: `ToFile()` and `ToString()`.
 
-> ⚠️ Don't forget to run `Chart.Build()` before exporting it to ensure auto-generated data is updated!
+> [!IMPORTANT]
+> Don't forget to run `Chart.Build()` before exporting it to ensure auto-generated data is updated!
 
 ## NotationWriteArgs
 SATURN DATA offers a few options when writing chart data and metadata.
@@ -16,7 +17,8 @@ For most use cases it's recommended to choose the latest version of the SAT form
 `ExportWatermark` allows you to choose a custom watermark to place at the top of a SAT format file.  
 For most use cases it's recommended to use the default value.
 
-> ⚠️ The MER format version does not have an export watermark!
+> [!NOTE]
+> The MER format version does not have an export watermark!
     
 ### ConvertFakeNotes
 `ConvertFakeNotes` will convert any Note with `JudgementType.Fake` according to the chosen option.
@@ -25,7 +27,8 @@ Available options are:
 - `ExcludeFromExport`, which will exclude affected Notes from the written data.
 - `ConvertToNormalNotes`, which will include affected Notes but convert them to normal Notes in the written data.
 
-> ⚠️ Only format versions older than SATv3 require this option.
+> [!NOTE]
+> Only format versions older than SATv3 require this option.
 
 ### ConvertAutoplayNotes
 `ConvertAutoplayNotes` will convert any Note with `JudgementType.Autoplay` according to the chosen option.
@@ -34,7 +37,8 @@ Available options are:
 - `ExcludeFromExport`, which will exclude affected Notes from the written data.
 - `ConvertToNormalNotes`, which will include affected Notes but convert them to normal Notes in the written data.
 
-> ⚠️ Only format versions older than SATv3 require this option.
+> [!NOTE]
+> Only format versions older than SATv3 require this option.
 
 ### MergeExtraLayers
 `MergeExtraLayers` will merge any additional Layers according to the chosen option.
@@ -44,7 +48,8 @@ Available options are:
 - `MergeIntoMainLayer`, which will merge all Notes and Events from the affected Layer into the main Layer in the written data.
 - `MergeIntoMainLayerWithoutEvents`, which will merge all Notes without any Events from the affected Layer into the main Layer in the written data.
 
-> ⚠️ Only format versions older than SATv2 require this option.
+> [!NOTE]
+> Only format versions older than SATv2 require this option.
 
 ### ConvertExtendedBonusTypes
 `ConvertExtendedBonusTypes` will convert any Notes with unsupported BonusTypes to a supported BonusType, according to the chosen option.
@@ -53,7 +58,8 @@ Available options are:
 - `ConvertToNormal`, which will convert affected Notes to normal Notes.
 - `ConvertToR`, which will convert affected Notes to R Notes.
 
-> ⚠️ Only the MER format version requires this option.
+> [!NOTE]
+> Only the MER format version requires this option.
 
 #### WriteMusicFilePath
 `WriteMusicFilepath` will write the `#MUSIC_FILE_PATH` MER format metadata tag, according to the chosen option.
@@ -63,7 +69,8 @@ Available options are:
 - `NoExtension`, which will write the file name of the specified audio file *without* its file extension.
 - `WithExtension`, which will write the file name of the specified audio file *with* its file extension.
 
-> ⚠️ Only the MER format version requires this option.
+> [!NOTE]
+> Only the MER format version requires this option.
 
 ## ToFile()
 `NotationSerializer.ToFile()` will directly write data to a specified filepath.  
