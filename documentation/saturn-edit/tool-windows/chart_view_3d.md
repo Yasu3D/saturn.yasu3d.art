@@ -7,7 +7,7 @@ It offers a game-accurate Chart preview, and its layout is reminiscent of the 3D
 ## Header Region
 <img src="media/chart_view_3d_header.png" alt="The header of the Chart View (3D) Tool Window.">
 
-The header region lists available operations and customization operations. 
+The header region lists available operations and customization options. 
 
 #### Mode
 The mode selector allows you to switch the editor mode.  
