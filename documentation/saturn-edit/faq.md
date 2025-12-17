@@ -12,5 +12,12 @@ You can add new Tool Windows by navigating to this location:
 View | Tool Windows | ...
 ```
 
+Or apply one of the layout presets here:
+```
+View | Layout Presets | ...
+```
+
 ## This Editor looks very different to what I'm used to. How do I do X now?
 Please read the [Transition Guide](guides/transition_guide.md).
+
+## How do I change the Tempo/Metre?
