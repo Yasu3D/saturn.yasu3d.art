@@ -1,7 +1,7 @@
-# Chart View 3D
+# Chart View (3D)
 <img src="media/chart_view_3d.png" alt="The header of the Chart View (3D) Tool Window.">
 
-The Chart View 3D Tool Window is a [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) editor that allows you to select, edit and insert all kinds of chart objects.  
+The Chart View (3D) Tool Window is a [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) editor that allows you to select, edit and insert all kinds of chart objects.  
 It offers a game-accurate Chart preview, and its layout is reminiscent of the 3D Viewport in Blender.
 
 ## Header Region
@@ -49,7 +49,7 @@ Changes the brightness of the background.
 #### Edit Type
 Changes all selected objects to the currently specified Note Type and Bonus Type. 
 
-#### Edit Shape
+#### Edit Shape 
 Resizes all selected objects to the currently specified Position and Size.
 
 > [!NOTE]

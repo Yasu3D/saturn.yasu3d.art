@@ -36,7 +36,7 @@
   - [Chart](notation/chart.md)
   - Format Specifications
     - [MER](notation/format-specifications/mer.md)
-    - [SATv3](notation/format-specifications/sat_v3.md)
+    - [SATv3](notation/format-specifications/sat_latest.md)
 
 - See Also
   - <a href="/documentation/saturn/index.html">SATURN Documentation</a>

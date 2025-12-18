@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-edit/faq.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/format_errors.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/guides/working_with_filepaths.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/guides/working_with_filepaths.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/sat_v3.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/sat_latest.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/tool-windows/chart_statistics.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/tool-windows/chart_statistics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/tool-windows/chart_view_3d.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/tool-windows/chart_view_3d.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/tool-windows/chart_view_text.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/tool-windows/chart_view_text.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +86,9 @@
       <workItem from="1765634803700" duration="32625000" />
       <workItem from="1765750288007" duration="8489000" />
       <workItem from="1765759526078" duration="163000" />
-      <workItem from="1765818861573" duration="306000" />
+      <workItem from="1765818861573" duration="36890000" />
+      <workItem from="1765904418192" duration="20758000" />
+      <workItem from="1766003674499" duration="16846000" />
     </task>
     <servers />
   </component>
