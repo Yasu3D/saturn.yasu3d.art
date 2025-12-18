@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="" />
+    <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/tool-windows/inspector.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/tool-windows/inspector.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/tool-windows/proofreader.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/tool-windows/proofreader.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,6 +83,8 @@
       <workItem from="1765818861573" duration="36890000" />
       <workItem from="1765904418192" duration="20758000" />
       <workItem from="1766003674499" duration="16846000" />
+      <workItem from="1766048612825" duration="68000" />
+      <workItem from="1766086151219" duration="10135000" />
     </task>
     <servers />
   </component>
