@@ -1,5 +1,5 @@
 # SATURN EDIT
-SATURN EDIT is the chart and cosmetics editor for SATURN.  
+SATURN EDIT is the chart and cosmetics editor for <a href="/documentation/saturn/index.html#">SATURN</a>.  
 It features:
 - Game-accurate rendering and visual effect simulation, thanks to <a href="/documentation/saturn-view/index.html#">SATURN VIEW</a>.
 - Game-accurate sound effect simulation.
