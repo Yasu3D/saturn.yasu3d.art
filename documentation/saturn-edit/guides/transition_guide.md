@@ -71,7 +71,7 @@ Objects will also indicate when your mouse is hovering over them, which should m
 
 > [!TIP]
 > If you'd like to learn more about how the selection system works, refer to this page:  
-> [TODO: ADD LINK]()
+> [Selection Priority in SATURN EDIT](guides/selection_priority.md)
 
 ## Editor Modes
 Editor modes have been added. They follow the same object-/edit-mode pattern as Blender.  

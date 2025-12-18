@@ -1,13 +1,13 @@
 # Chart View (3D)
-<img src="media/chart_view_3d.png" alt="The header of the Chart View (3D) Tool Window.">
-
 The Chart View (3D) Tool Window is a [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) editor that allows you to select, edit and insert all kinds of chart objects.  
 It offers a game-accurate Chart preview, and its layout is reminiscent of the 3D Viewport in Blender.
 
-## Header Region
-<img src="media/chart_view_3d_header.png" alt="The header of the Chart View (3D) Tool Window.">
+<img src="media/chart_view_3d.png" alt="The header of the Chart View (3D) Tool Window.">
 
+## Header Region
 The header region lists available operations and customization options. 
+
+<img src="media/chart_view_3d_header.png" alt="The header of the Chart View (3D) Tool Window.">
 
 #### Mode
 The mode selector allows you to switch the editor mode.  
@@ -62,8 +62,9 @@ Deletes all selected objects.
 Adds a Note with the currently specified Types, Position and Size to the Chart at the current timestamp.
 
 ## Viewport
-<img src="media/chart_view_3d_viewport.png" alt="The viewport of the Chart View (3D) Tool Window.">
 The viewport displays a simulation of the Chart, including a basic game UI.
+
+<img src="media/chart_view_3d_viewport.png" alt="The viewport of the Chart View (3D) Tool Window.">
 
 #### Difficulty
 Displays the difficulty of the Chart, as it would be displayed in-game.
@@ -77,3 +78,36 @@ Displays the title of the Chart, as it would be displayed in-game.
 
 #### Cursor
 Displays a preview of what a Note would look like if it was inserted with the current Types, Position, and Size.
+
+
+## Mouse Shortcuts
+You can use mouse shortcuts for various actions in the viewport:
+
+#### Navigating Time
+<kbd>WheelUp</kbd> will move forward in time.  
+<kbd>WheelDown</kbd> will move backward in time.
+
+#### Changing Cursor Shape
+Clicking with <kbd>RMB</kbd> will set the Position of the Cursor Note to the lane you're hovering over.  
+Dragging while <kbd>RMB</kbd> stays held down will change the Size of the Cursor Note until you let go.
+
+> [!TIP]
+> If you regularly re-size the Cursor Note by accident when you just intended to re-position it, please increase the threshold for when a "Click 'n' Drag" action is recognized.
+> 
+> You can find the option here:
+> ```
+> Settings | General | Other | Click 'n' Drag Threshold (Pixels)
+> ```
+
+#### Selecting Objects
+Clicking with <kbd>LMB</kbd> will select objects.  
+Dragging while <kbd>LMB</kbd> stays held down will box select objects.
+
+Modifier keys affect the selection behaviour, similar to a file explorer:  
+- <kbd>LMB</kbd> will clear the previous selection, then select a single object.  
+- <kbd>Shift</kbd>-<kbd>LMB</kbd> (Range-Select) will clear the previous selection, then select all objects between the last selected object and the newly selected object.  
+- <kbd>Ctrl</kbd>-<kbd>LMB</kbd> (Multi-Select) will select objects, without clearing the previous selection.
+- <kbd>Ctrl</kbd>-<kbd>Shift</kbd>-<kbd>LMB</kbd> (Range Multi-Select) will select all objects between the last selected object and the newly selected object, without clearing the previous selection.
+
+> [!NOTE]
+> For technical reasons, changing the selection counts as an operation that can be undone/redone. This behaviour cannot be disabled.

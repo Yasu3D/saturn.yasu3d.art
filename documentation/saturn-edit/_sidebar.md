@@ -13,6 +13,7 @@
 - Guides
   - [Transition Guide](guides/transition_guide.md)
   - [Working with Filepaths in SATURN EDIT](guides/working_with_filepaths.md)
+  - [Selection Priority in SATURN EDIT](guides/selection_priority.md)
 
 - Editors
   - [Chart Editor](editors/chart_editor.md)

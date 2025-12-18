@@ -1,7 +1,7 @@
 # Chart Statistics
-<img src="media/chart_statistics.png">
-
 The Chart Statistics Tool Window lists various interesting statistics about a Chart.
+
+<img src="media/chart_statistics.png">
 
 ## Note Graph
 The note graph displays the ratio of different Note Types with colored squares.

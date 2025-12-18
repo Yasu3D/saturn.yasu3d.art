@@ -1,8 +1,8 @@
 # Chart View (Text)
-<img src="media/chart_view_txt.png">
-
-The Chart View (Text) Tool Window is a text editor to directly edit Charts in the SAT format.
+The Chart View (Text) Tool Window is a text editor that lets you directly edit Charts in the SAT format.
 The Chart text data is automatically updated every time a change is made.
+
+<img src="media/chart_view_txt.png">
 
 > [!TIP]
 > If you'd like to learn more about the SAT format, refer to this page:
@@ -24,7 +24,7 @@ Attempts to apply changes made to the Chart data.
 > When changes are applied your operation history is reset. You will not be able to undo previously applied operations.
 
 ## Errors
+<img src="media/chart_view_txt_error.png">
+
 If mistakes in the data are found, changes won't be applied and a list of error messages will appear.  
 Error messages are explained in detail on this page: <a href="/documentation/saturn-data/index.html#/notation/format_errors">Format Errors</a>.
-
-<img src="media/chart_view_txt_error.png">
