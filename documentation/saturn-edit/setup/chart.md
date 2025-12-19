@@ -63,7 +63,7 @@ You can edit these values by:
 > ```
 
 > [!TIP]
-> To learn more about how to create and edit events, refer to [TODO: ADD LINK]().
+> To learn more about how to create and edit events, refer to the "Insert" menu in the [Chart View (3D)](tool-windows/chart_view_3d.md#Insert) Tool Window, or the [Event List](tool-windows/event_list.md) Tool Window.
 
 ##### Offset
 Once the Tempo and Metre match, your music should not drift away from the Measure Lines anymore.  
