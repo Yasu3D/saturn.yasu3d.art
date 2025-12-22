@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/documentation/saturn-edit/changelog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-edit/setup/chart.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-edit/setup/chart.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn-view/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-view/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/saturn/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +81,7 @@
       <workItem from="1766003674499" duration="16846000" />
       <workItem from="1766048612825" duration="68000" />
       <workItem from="1766086151219" duration="31549000" />
-      <workItem from="1766362319526" duration="4714000" />
+      <workItem from="1766362319526" duration="5055000" />
     </task>
     <servers />
   </component>

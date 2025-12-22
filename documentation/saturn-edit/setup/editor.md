@@ -26,3 +26,14 @@ SATURN EDIT does not collect any user/usage metrics or other data. All it does i
 ```
 Settings | General | On Program Start | Check For Updates
 ```
+
+## Portable Installation
+If you wish to have a portable installation of SATURN EDIT you can do so by adding a directory named "Portable" next to the executable:
+
+```file tree
+.
+└── SaturnEdit/
+    ├── Portable/
+    ├── SaturnEdit.exe
+    └── ...
+```
