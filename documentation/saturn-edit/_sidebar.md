@@ -1,9 +1,15 @@
 <!-- docs/_sidebar.md -->
 
 - [Introduction]()
+- [Changelog](changelog.md)
+
+---
+
 - [Shortcut Notation Conventions](shortcut_notation_conventions.md)
 - [Glossary](glossary.md)
 - [FAQ](faq.md)
+
+---
 
 - Setup
   - [Editor Setup](setup/editor.md)
@@ -31,6 +37,8 @@
   - [Inspector](tool-windows/inspector.md)
   - [Cursor](tool-windows/cursor.md)
   - [Waveform](tool-windows/waveform.md)
+
+---
 
 - See Also
   - <a href="/documentation/saturn/index.html">SATURN Documentation</a>

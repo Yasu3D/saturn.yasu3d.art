@@ -9,7 +9,7 @@ It features:
 - A proofreading system.
 - A custom docking/layout system.
 - Fully customizable shortcuts.
-- English, Japanese and Chinese Localization. (WIP)
+- Localizable UI. (Japanese and Chinese Localization WIP)
 
 ## Download
 Downloads are currently unavailable.

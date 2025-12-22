@@ -77,6 +77,11 @@ The **first option** for aligning the audio and beat grid is to use external sof
 The **second option** is to use the Audio Offset property in the Chart metadata, while verifying changes with the Waveform Tool Window.  
 This process needs a bit of trial and error and might vary slightly, depending on the music you want to create a Chart for.
 The general idea should apply in all cases though.
+
+> [!IMPORTANT]
+> Positive values move the audio **later**,  
+> Negative values move the audio **earlier**.
+
 <img src="media/offset.png" alt="A visual explanation for how to determine the correct audio offset.">
 
 > [!TIP]

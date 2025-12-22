@@ -899,3 +899,9 @@ kbd {
   background: #00000020 !important;
   backdrop-filter: blur(8px) !important;
 }
+
+hr {
+  width: 90%;
+  color: transparent;
+  border-top: 1px solid #707070;
+}

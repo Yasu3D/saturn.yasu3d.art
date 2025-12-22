@@ -11,8 +11,10 @@ If you downloaded an installer or _just_ an executable file and nothing else, it
 > If you are migrating from an older editor that isn't SATURN EDIT, I recommend reading the [Transition Guide](guides/transition_guide.md).
 
 > [!NOTE]
-> For the time being, hitsounds are not included by default! You must source these yourself.  
-> For more information about how to select hitsounds in the editor, please see [Audio Setup](setup/audio.md#Hitsounds).
+> For the time being, hitsounds are **not** included by default! You must source these yourself.
+> 
+> For more information about how to select hitsounds in the editor, please see:  
+> [Audio Setup](setup/audio.md#Hitsounds).
 
 ## Automatic Updates
 SATURN EDIT offers semi-automatic updates. 
