@@ -162,34 +162,34 @@ Events and Notes are differentiated by an "Object Type" Id.
 ## Note Types
 Notes are further differentiated by a "Note Type" Id.
 
-| MER Enum Value                | Id | Note Type                                       |
-|-------------------------------|----|-------------------------------------------------|
-| `NOTE_KIND_TOUCH`             | 1  | Touch Note                                      |
-| `NOTE_KIND_TOUCH_BONUS`       | 2  | Touch Note (Bonus Type: Bonus)                  |
-| `NOTE_KIND_SNAP_UP`           | 3  | Snap Forward Note                               |
-| `NOTE_KIND_SNAP_DOWN`         | 4  | Snap Backward Note                              |
-| `NOTE_KIND_SLIDE_LEFT`        | 5  | Slide Clockwise Note                            |
-| `NOTE_KIND_SLIDE_LEFT_BONUS`  | 6  | Slide Clockwise Note (Bonus Type: Bonus)        |
-| `NOTE_KIND_SLIDE_RIGHT`       | 7  | Slide Counterclockwise Note                     |
-| `NOTE_KIND_SLIDE_RIGHT_BONUS` | 8  | Slide Counterclockwise Note (Bonus Type: Bonus) |
-| `NOTE_KIND_HOLD_START`        | 9  | Hold Start Note                                 |
-| `NOTE_KIND_HOLD_JOINT`        | 10 | Hold Point Note                                 |
-| `NOTE_KIND_HOLD_END`          | 11 | Hold End Note                                   |
-| `NOTE_KIND_GUIDE_LANE_BEGIN`  | 12 | Lane Show Note                                  |
-| `NOTE_KIND_GUIDE_LANE_END`    | 13 | Lane Hide Note                                  |
-| `NOTE_KIND_EOF`               | 14 | Chart End (**E**nd **O**f **F**umen)            |
-| `NOTE_KIND_GUIDE_SAME_TIME`   | 15 | Sync Note (Unused in MER files)                 |
-| `NOTE_KIND_CHAIN`             | 16 | Chain Note                                      |
-| `NOTE_KIND_GUIDE_LANE`        | 17 | _Unknown/Unused._                               |
-| `NOTE_KIND_TUTORIAL_TAG`      | 18 | Tutorial Marker Event                           |
-| `NOTE_KIND_BAR_LINE`          | 19 | Measure Line Note (Unused in MER files)         |
-| `NOTE_KIND_TOUCH_S`           | 20 | Touch Note (Bonus Type: R)                      |
-| `NOTE_KIND_SNAP_UP_S`         | 21 | Snap Forward Note (Bonus Type: R)               |
-| `NOTE_KIND_SNAP_DOWN_S`       | 22 | Snap Backward Note (Bonus Type: R)              |
-| `NOTE_KIND_SLIDE_LEFT_S`      | 23 | Slide Clockwise Note (Bonus Type: R)            |
-| `NOTE_KIND_SLIDE_RIGHT_S`     | 24 | Slide Counterclockwise Note (Bonus Type: R)     |
-| `NOTE_KIND_HOLD_START_S`      | 25 | Hold Start Note (Bonus Type: R)                 |
-| `NOTE_KIND_CHAIN_S`           | 26 | Chain Note (Bonus Type: R)                      |
+| MER Enum Value                | Id | Note Type                                                     |
+|-------------------------------|----|---------------------------------------------------------------|
+| `NOTE_KIND_TOUCH`             | 1  | Touch Note                                                    |
+| `NOTE_KIND_TOUCH_BONUS`       | 2  | Touch Note (Bonus Type: Bonus)                                |
+| `NOTE_KIND_SNAP_UP`           | 3  | Snap Forward Note                                             |
+| `NOTE_KIND_SNAP_DOWN`         | 4  | Snap Backward Note                                            |
+| `NOTE_KIND_SLIDE_LEFT`        | 5  | Slide Clockwise Note                                          |
+| `NOTE_KIND_SLIDE_LEFT_BONUS`  | 6  | Slide Clockwise Note (Bonus Type: Bonus)                      |
+| `NOTE_KIND_SLIDE_RIGHT`       | 7  | Slide Counterclockwise Note                                   |
+| `NOTE_KIND_SLIDE_RIGHT_BONUS` | 8  | Slide Counterclockwise Note (Bonus Type: Bonus)               |
+| `NOTE_KIND_HOLD_START`        | 9  | Hold Start Note                                               |
+| `NOTE_KIND_HOLD_JOINT`        | 10 | Hold Point Note                                               |
+| `NOTE_KIND_HOLD_END`          | 11 | Hold End Note                                                 |
+| `NOTE_KIND_GUIDE_LANE_BEGIN`  | 12 | Lane Show Note                                                |
+| `NOTE_KIND_GUIDE_LANE_END`    | 13 | Lane Hide Note                                                |
+| `NOTE_KIND_EOF`               | 14 | Chart End (**E**nd **O**f **F**ile /**E**nd **O**f **F**umen) |
+| `NOTE_KIND_GUIDE_SAME_TIME`   | 15 | Sync Note (Unused in MER files)                               |
+| `NOTE_KIND_CHAIN`             | 16 | Chain Note                                                    |
+| `NOTE_KIND_GUIDE_LANE`        | 17 | _Unknown/Unused._                                             |
+| `NOTE_KIND_TUTORIAL_TAG`      | 18 | Tutorial Marker Event                                         |
+| `NOTE_KIND_BAR_LINE`          | 19 | Measure Line Note (Unused in MER files)                       |
+| `NOTE_KIND_TOUCH_S`           | 20 | Touch Note (Bonus Type: R)                                    |
+| `NOTE_KIND_SNAP_UP_S`         | 21 | Snap Forward Note (Bonus Type: R)                             |
+| `NOTE_KIND_SNAP_DOWN_S`       | 22 | Snap Backward Note (Bonus Type: R)                            |
+| `NOTE_KIND_SLIDE_LEFT_S`      | 23 | Slide Clockwise Note (Bonus Type: R)                          |
+| `NOTE_KIND_SLIDE_RIGHT_S`     | 24 | Slide Counterclockwise Note (Bonus Type: R)                   |
+| `NOTE_KIND_HOLD_START_S`      | 25 | Hold Start Note (Bonus Type: R)                               |
+| `NOTE_KIND_CHAIN_S`           | 26 | Chain Note (Bonus Type: R)                                    |
 
 ## Lane Toggle Sweep Directions
 Lane Toggles (Lane Show/Lane Hide Notes) define a direction for their sweep animation to go in.

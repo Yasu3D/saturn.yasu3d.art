@@ -27,7 +27,7 @@ The kana reading of the title.
 The artist of the chart's song.
 
 ### BpmMessage
-The bpm text to display on the song select screen.
+The bpm value(s) to display on the song select screen.
 
 ### Revision
 The current revision of the chart.

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="" />
+    <list default="true" id="593664f8-6730-439f-9100-280782d80830" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/notation/entry.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/entry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/mer.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/mer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/sat_latest.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/saturn-data/notation/format-specifications/sat_latest.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,6 +87,8 @@
       <workItem from="1766048612825" duration="68000" />
       <workItem from="1766086151219" duration="31549000" />
       <workItem from="1766362319526" duration="5055000" />
+      <workItem from="1766411697029" duration="860000" />
+      <workItem from="1766579741268" duration="19236000" />
     </task>
     <servers />
   </component>
