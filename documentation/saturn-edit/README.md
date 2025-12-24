@@ -12,4 +12,9 @@ It features:
 - Localizable UI. (Japanese and Chinese Localization WIP)
 
 ## Download
-Downloads are currently unavailable.
+
+### Windows
+<button type="submit" onclick="window.location.href='https://github.com/Yasu3D/SaturnEdit/releases/latest/download/SaturnEdit-Windows-x64.zip'">Download</button> <span style="color: #959595; font-size: 0.85em;">github.com/Yasu3D/SaturnEdit/releases/latest/download/SaturnEdit-Windows-x64.zip</span>
+
+### Linux
+<button type="submit" onclick="window.location.href='https://github.com/Yasu3D/SaturnEdit/releases/latest/download/SaturnEdit-Linux-x64.zip'">Download</button> <span style="color: #959595; font-size: 0.85em;">github.com/Yasu3D/SaturnEdit/releases/latest/download/SaturnEdit-Linux-x64.zip</span>
