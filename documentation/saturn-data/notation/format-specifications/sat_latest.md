@@ -71,7 +71,64 @@ Notes always sweep **counterclockwise** from their starting Position.
 ## Core Concept: Multi-line Objects
 Some objects are made up of multiple sub-objects. Currently, this includes Hold Notes, Stop Effect Events, and Reverse Effect Events.
 
-TODO.
+The first sub-object of a Multi-line object always defines its Type like any other object.  
+All subsequent sub-objects use the Vertical Bar `|` `(0x7C)` as their type.
+
+> [!TIP]
+> In English, `|` could be read/interpreted as "The previous object is continued by [...]".
+
+```sat
+@LAYER Example
+REVERSE   1    0   
+|         2    0   
+|         3    0   
+
+# A Reverse Effect Event, defined by three separate (but linked together) timestamps.
+```
+
+A multi-line object interrupts every other object definition until it finishes.
+```sat
+# When a multi-line object is defined, nothing else can be defined until it finishes.
+HOLD  _ _ 1    0    30   15  
+|     V _ 1    240  35   15  
+|     V _ 1    480  30   15  
+|     V _ 1    720  35   15  
+|     V _ 1    960  30   15  
+
+# Therefore the Touch Note at timestamp 1'240 is placed here below
+# the Hold Note, despite 1'240 being earlier than 1'960 etc.
+TOUCH _ _ 1    240  50   15  
+TOUCH _ _ 1    480  50   15  
+TOUCH _ _ 1    720  50   15  
+```
+
+This also means two multi-line objects cannot be defined at the same time. One must end before the other can be defined.
+```sat
+# This is valid.
+REVERSE   1    0   
+|         2    0   
+|         3    0   
+HOLD  _ _ 1    0    30   15  
+|     V _ 1    240  35   15  
+|     V _ 1    480  30   15  
+|     V _ 1    720  35   15  
+|     V _ 1    960  30   15  
+```
+
+```sat
+# This is invalid.
+HOLD  _ _ 1    0    30   15  
+REVERSE   1    0   
+|     V _ 1    240  35   15  
+|     V _ 1    480  30   15  
+|     V _ 1    720  35   15  
+|     V _ 1    960  30   15  
+|         2    0   
+|         3    0   
+```
+
+> [!IMPORTANT]
+> Multi-line objects have some rules specific to each type. They are explained later on this page.
 
 ## Comments
 SATv3 deserializers will ignore any line that begins with a Number sign `#`.  
@@ -533,19 +590,19 @@ TOUCH _ _ 2    1440 45   15
 ```
 
 For *Events*, there is...  
-- A Tempo Change at 0, 0 that sets the Tempo to 120BPM.  
-- A Metre Change at 0, 0 that sets the Metre to 4/4.  
+- A Tempo Change at 0'0 that sets the Tempo to 120BPM.  
+- A Metre Change at 0'0 that sets the Metre to 4/4.  
 
 For *Lane Toggles*, there is...  
-- Show Lanes in a Center Sweep at 0, 0. It's at Position 15 with a Size spanning 60 lanes.  
+- Show Lanes in a Center Sweep at 0'0. It's at Position 15 with a Size spanning 60 lanes.  
 
 For the *Main Layer*, there is...  
-- A Touch R-Note at 1, 0. It's at Position 30, with a Size spanning 15 lanes.  
-- A Chain Note at 1, 240. It's at Position 45, with a Size spanning 15 lanes.  
-- A Snap Forward Note at 2, 0. It's at Position 45, with a Size spanning 15 lanes.  
-- A Slide Clockwise Bonus Note at 2, 480. It's at Position 30, with a Size spanning 15 lanes.  
-- A Touch Note at 2, 1440. It's at Position 30, with a Size spanning 15 lanes.  
+- A Touch R-Note at 1'0. It's at Position 30, with a Size spanning 15 lanes.  
+- A Chain Note at 1'240. It's at Position 45, with a Size spanning 15 lanes.  
+- A Snap Forward Note at 2'0. It's at Position 45, with a Size spanning 15 lanes.  
+- A Slide Clockwise Bonus Note at 2'480. It's at Position 30, with a Size spanning 15 lanes.  
+- A Touch Note at 2'1440. It's at Position 30, with a Size spanning 15 lanes.  
 
 For the *Overtaking Note* Layer, there is...
-- A Speed Change at 0, 0 that sets the Scroll Speed to 0.5x.
-- A Touch Note at 2, 1440. It's at Position 45, with a Size spanning 15 lanes.
+- A Speed Change at 0'0 that sets the Scroll Speed to 0.5x.
+- A Touch Note at 2'1440. It's at Position 45, with a Size spanning 15 lanes.
