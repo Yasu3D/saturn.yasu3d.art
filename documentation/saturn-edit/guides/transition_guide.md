@@ -113,7 +113,7 @@ Chart View (3D) | Insert | Add (...)
 > ```
 
 > [!TIP]
-> To speed up your workflow, you can assign a shortcuts to insert specific Events!
+> To speed up your workflow, you can assign shortcuts to insert specific Events!
 
 ## Bookmark Editing
 Bookmarks are now proper chart objects, which means they can be selected and edited the same way as Notes and Events. They even show up in the 3D View!
