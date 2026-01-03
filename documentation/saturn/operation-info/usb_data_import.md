@@ -6,46 +6,51 @@ USB Data Import allows you to import new music, cosmetics, and profiles into SAT
 
 To efficiently detect files, SATURN expects a fixed data structure:
 
-- A `../Data/` subdirectory must be in the root directory.
-- Content inside the `../Data/` directory must follow the same file structure as the `../StreamingAssets/` directory in the local game files.
+- A `../SATURN_IMPORT/` subdirectory must be in the root directory.
+- Content inside the `../SATURN_IMPORT/` directory must follow the same file structure as the `../StreamingAssets/` directory in the local game files, with the addition of a `../Profile/` directory to import profiles.
 
 When set up properly, the data should be laid out like this:
 
 ```file tree
 E:/
-└── Data
-    ├── Music/
+└── SATURN_IMPORT/
+    ├── Data/
+    │   ├── Music/
+    │   │   └── ...
+    │   ├── StageUp/
+    │   │   └── ...
+    │   └── Cosmetic/
+    │       ├── ConsoleColor/
+    │       │   └── ...
+    │       ├── Emblem/
+    │       │   └── ...
+    │       ├── Icon/
+    │       │   └── ...
+    │       ├── Navigator/
+    │       │   └── ...
+    │       ├── NoteSound/
+    │       │   └── ...
+    │       ├── Plate/
+    │       │   └── ...
+    │       ├── SystemMusic/
+    │       │   └── ...
+    │       ├── SystemSound/
+    │       │   └── ...
+    │       └── Title/
+    │           └── ...
+    ├── Led/
     │   └── ...
-    ├── StageUp/
+    ├── Locales/
     │   └── ...
-    ├── Profile/
-    │   └── ...
-    └── Cosmetic/
-        ├── ConsoleColor/
-        │   └── ...
-        ├── Emblem/
-        │   └── ...
-        ├── Icon/
-        │   └── ...
-        ├── Navigator/
-        │   └── ...
-        ├── NoteSound/
-        │   └── ...
-        ├── Plate/
-        │   └── ...
-        ├── SystemMusic/
-        │   └── ...
-        ├── SystemSound/
-        │   └── ...
-        └── Title/
-            └── ...
+    └── Profile/
+        └── ...
 ```
 
 #### Notes regarding Data Safety:
 
 - SATURN does not modify any external data. It only copies external files over to local storage.
-- SATURN will overwrite local data in `../StreamingAssets/` if another file with the same path already exists.
-- SATURN only thoroughly scans data in the `../Data/` directory.
+- SATURN will overwrite data in the `../StreamingAssets/` of the game install if another file with the same path already exists.
+- SATURN only thoroughly scans data in the `../SATURN_IMPORT/` directory.
 - All other external data is ignored and left untouched.
 
 
